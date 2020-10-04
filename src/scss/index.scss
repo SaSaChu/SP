@@ -1,0 +1,352 @@
+//
+// @author      OA Wu <comdan66@gmail.com>
+// @copyright   Copyright (c) 2015 - 2019, Ginkgo
+// @license     http://opensource.org/licenses/MIT  MIT License
+// @link        https://www.ioa.tw/
+//
+
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+
+.banner-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(188,143,143,1);
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .swiper-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            // align-items: center;
+
+            .swiper-content-img {
+                img {
+
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .swiper-content-text {
+                position: absolute;
+                top: 35%;
+                left: 0;
+                padding: 0 10%;
+                text-align: left;
+
+                h2 {
+                    text-align: left;
+                    font-size: 3rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                button {
+                    width: 240px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    border: 2px blue solid;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    
+                }
+            }
+        }
+
+        .my-swiper-pagination {
+            width: 100%;
+            position: absolute;
+            bottom: 5%;
+            padding: 0 10%;
+            z-index: 3;
+            display: flex;
+
+            .swiper-pagination-item {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                padding: 15px;
+                justify-content: center;
+                background-color: white;
+                border-right: 1px solid black;
+            }
+        }
+    }
+}
+
+.section1 {
+    position: relative;
+    display: flex;
+    background-image: url("https://fakeimg.pl/1920x720/?text=s1");
+    min-height: 720px;
+    text-align: left;
+    padding: 0 10%;
+
+    .section1-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .section1-img {
+        position: relative;
+        top: 200px;
+        display: flex;
+        align-self: flex-end
+    }
+}
+
+.section2 {
+    position: relative;
+    display: flex;
+    
+    padding: 0 10%;
+    text-align: left;
+    width: 50%;
+    .section2-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            color: rgba(0, 131, 211, 1.00);
+            font-size: 3rem;
+        }
+    }
+}
+
+.section3 {
+    position: relative;
+    display: flex;
+    background-image: url("https://fakeimg.pl/1920x360/?text=s3"); 
+    padding: 0 10%;
+    text-align: left;
+    width: 100%;
+    margin: 6rem 0;
+
+    .section3-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            color: rgba(0, 131, 211, 1.00);
+            font-size: 3rem;
+        }
+
+        button {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3rem;
+            text-align: left;
+            border: 0;
+            // border: 2px blue solid;
+            // border-radius: 50px;
+            background-color: transparent;
+
+            &:before {
+                content: '>';
+                // width: 100px;
+                // height: 100px;
+                border: 1px solid blue;
+                border-radius: 100%;
+                padding: 10px 15px;
+                margin-right: 2rem;
+
+            }
+            
+        }
+    }
+}
+
+.section4 {
+    position: relative;
+    display: flex;
+    background-color: rgba(230, 230, 230, 1.00);
+    padding: 0 10%;
+    text-align: left;
+    width: 100%;
+    margin: 6rem 0;
+
+    .section4-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            color: rgba(0, 131, 211, 1.00);
+            font-size: 3rem;
+        }
+
+        button {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3rem;
+            text-align: left;
+            border: 0;
+            // border: 2px blue solid;
+            // border-radius: 50px;
+            background-color: transparent;
+
+            &:before {
+                content: '>';
+                // width: 100px;
+                // height: 100px;
+                border: 1px solid blue;
+                border-radius: 100%;
+                padding: 10px 15px;
+                margin-right: 2rem;
+
+            }
+            
+        }
+    }
+
+    .section4-img {
+        // position: absolute;
+        // right: 0;
+    }
+}
+
+.section5 {
+    position: relative;
+    // display: flex;
+    // background-color: rgba(230, 230, 230, 1.00);
+    padding: 0 10%;
+    text-align: center;
+    width: 100%;
+    margin: 6rem 0;
+
+    .section5-text {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+
+        h2 {
+            color: rgba(0, 131, 211, 1.00);
+            font-size: 3rem;
+        }
+
+        button {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3rem;
+            text-align: left;
+            border: 0;
+            // border: 2px blue solid;
+            // border-radius: 50px;
+            background-color: transparent;
+
+            &:before {
+                content: '>';
+                // width: 100px;
+                // height: 100px;
+                border: 1px solid blue;
+                border-radius: 100%;
+                padding: 10px 15px;
+                margin-right: 2rem;
+
+            }
+            
+        }
+    }
+
+    .section5-img {
+        // position: absolute;
+        // right: 0;
+        margin: 3rem 0;
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.section6 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(230, 230, 230, 1.00);
+    padding: 0 10%;
+    text-align: left;
+    width: 100%;
+    margin: 6rem 0;
+
+    .section6-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            color: rgba(0, 131, 211, 1.00);
+            font-size: 3rem;
+        }
+
+        button {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3rem;
+            text-align: left;
+            border: 0;
+            // border: 2px blue solid;
+            // border-radius: 50px;
+            background-color: transparent;
+
+            &:before {
+                content: '<';
+                // width: 100px;
+                // height: 100px;
+                border: 1px solid blue;
+                border-radius: 100%;
+                padding: 10px 15px;
+                margin-right: 2rem;
+
+            }
+
+            &:after {
+                content: '>';
+                // width: 100px;
+                // height: 100px;
+                border: 1px solid blue;
+                border-radius: 100%;
+                padding: 10px 15px;
+                margin-left: 2rem;
+
+            }
+            
+        }
+    }
+
+    .section6-img {
+        // position: absolute;
+        // right: 0;
+    }
+}

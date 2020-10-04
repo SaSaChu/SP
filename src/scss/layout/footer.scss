@@ -1,0 +1,46 @@
+footer {
+
+    .top {
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            justify-content: space-around;
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: left; 
+                &:nth-child(2) {
+                    margin:0 3rem;
+                }
+                a {
+                    padding: 10px 0;
+                    text-decoration: none;
+                }
+            }
+        }
+        .right {
+            text-align: right;
+        }
+    }
+
+    .last {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(3, 171, 236, 1.00);
+        height: 80px;
+        padding: 10px 10%;
+        text-align: left;
+        align-items: center;
+
+        .language {
+        }
+        .copy-right {
+            
+        }
+    }
+    
+}

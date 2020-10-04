@@ -1,0 +1,10 @@
+header { position: absolute; top: 0; left: 0; width: 100%; z-index: 3; padding: 0 10%; }
+header .header-wrapper { display: flex; justify-content: center; align-items: center; }
+header .header-wrapper h1 { justify-self: start; }
+header .header-wrapper h1 a { text-decoration: none; }
+header .header-wrapper #nav { flex: 2; display: flex; justify-content: center; }
+header .header-wrapper #nav ul { display: flex; padding: 0; list-style-type: none; }
+header .header-wrapper #nav ul li { margin: 0 5px; padding: 0 5px; font-size: 1.2rem; }
+header .header-wrapper #nav ul li a { text-decoration: none; }
+header .header-wrapper .action ul { display: flex; list-style: none; }
+header .header-wrapper .action ul li a { text-decoration: none; }

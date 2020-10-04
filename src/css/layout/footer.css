@@ -1,0 +1,7 @@
+footer .top { padding: 0 10%; display: flex; justify-content: space-between; }
+footer .top .left { display: flex; justify-content: space-around; }
+footer .top .left div { display: flex; flex-direction: column; text-align: left; }
+footer .top .left div:nth-child(2) { margin: 0 3rem; }
+footer .top .left div a { padding: 10px 0; text-decoration: none; }
+footer .top .right { text-align: right; }
+footer .last { position: relative; display: flex; justify-content: space-between; background-color: #03abec; height: 80px; padding: 10px 10%; text-align: left; align-items: center; }

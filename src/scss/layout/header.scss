@@ -1,0 +1,55 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 0 10%;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            // flex: 1;
+            justify-self: start;
+
+            a {
+                text-decoration: none;
+            }
+        }
+        #nav {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            ul {
+                display: flex;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+
+                    margin: 0 5px;
+                    padding: 0 5px;
+                    font-size: 1.2rem;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    
+        .action {
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

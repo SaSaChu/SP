@@ -1,0 +1,147 @@
+
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+
+
+$blue: rgba(0, 142, 216, 1.00); // 主要藍色
+$orange:rgba(255, 121, 2, 1.00); // 橘色
+$deepGray: rgba(58, 58, 58, 1.00); // 標題黑色（深灰）
+$gray: rgba(75, 75, 75, 1.00); // 內文顏色（中灰）
+$lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
+
+藍色漸層
+// rgba(0, 131, 210, 1.00)
+// rgba(0, 178, 210, 1.00)
+
+
+// 13pt
+.type13_W {
+  font-size: 1rem;
+  color: white;
+}
+
+
+
+// 14pt
+.type14_B {
+  font-size: 1.1rem;
+  color: $blue;
+}
+
+.type14_G {
+  font-size: 1.1rem;
+  color: $gray;
+}
+
+.type14_dG {
+  font-size: 1.1rem;
+  color: $deepGray;
+}
+
+.bold_type14_lG {
+  font-size: 1.1rem;
+  color: $lightGray;
+  font-weight: bold;
+}
+
+
+
+// 16pt
+.type16_B {
+  font-size: 1.2rem;
+  color: $blue;
+}
+
+.type16_G {
+  font-size: 1.2rem;
+  color: $gray;
+}
+
+.type16_dG {
+  font-size: 1.2rem;
+  color: $deepGray;
+}
+
+.type16_W {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.type16_lG {
+  font-size: 1.2rem;
+  color: $lightGray;
+}
+
+
+
+// 18pt
+.bold_type18_W {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.bold_type18_B {
+  font-size: 1.5rem;
+  color: $blue;
+  font-weight: bold;
+}
+
+.bold_type18_O {
+  font-size: 1.5rem;
+  color: $orange;
+  font-weight: bold;
+}
+
+
+
+// 20pt
+.bold_type20_B {
+  font-size: 1.6rem;
+  color: $blue;
+  font-weight: bold;
+}
+
+.type20_dG {
+  font-weight: 1.6rem;
+  color: $deepGray;
+}
+
+
+
+// 50pt
+.bold_type50_dG {
+  font-size: 4rem;
+  color: $deepGray;
+  font-weight: bold;
+}
+
+.bold_type50_B {
+  font-size: 4rem;
+  color: $blue;
+  font-weight: bold;
+}
+
+.bold_type50_W {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+// 60pt
+.bold_type60_dG {
+  font-size: 5rem;
+  color: $deepGray;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
