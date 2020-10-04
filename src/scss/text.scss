@@ -11,9 +11,16 @@ $deepGray: rgba(58, 58, 58, 1.00); // 標題黑色（深灰）
 $gray: rgba(75, 75, 75, 1.00); // 內文顏色（中灰）
 $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 
-藍色漸層
-// rgba(0, 131, 210, 1.00)
-// rgba(0, 178, 210, 1.00)
+// 漸層01
+.color-gradient01 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+  background: rgba(0, 131, 210, 1.00); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(0, 131, 210, 1.00) 0%, rgba(0, 178, 210, 1.00) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */
+}
+
 
 
 // 13pt
@@ -43,7 +50,7 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 .bold_type14_lG {
   font-size: 1.1rem;
   color: $lightGray;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 
@@ -80,19 +87,19 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 .bold_type18_W {
   font-size: 1.5rem;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .bold_type18_B {
   font-size: 1.5rem;
   color: $blue;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .bold_type18_O {
   font-size: 1.5rem;
   color: $orange;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 
@@ -101,7 +108,7 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 .bold_type20_B {
   font-size: 1.6rem;
   color: $blue;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .type20_dG {
@@ -115,19 +122,19 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 .bold_type50_dG {
   font-size: 4rem;
   color: $deepGray;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .bold_type50_B {
   font-size: 4rem;
   color: $blue;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .bold_type50_W {
   font-size: 4rem;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 
@@ -136,7 +143,7 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 .bold_type60_dG {
   font-size: 5rem;
   color: $deepGray;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 

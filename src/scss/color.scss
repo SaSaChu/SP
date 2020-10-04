@@ -1,0 +1,48 @@
+
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+
+
+$blue: rgba(0, 142, 216, 1.00); // 主要藍色
+$orange:rgba(255, 121, 2, 1.00); // 橘色
+$deepGray: rgba(58, 58, 58, 1.00); // 標題黑色（深灰）
+$gray: rgba(75, 75, 75, 1.00); // 內文顏色（中灰）
+$lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
+
+// 漸層01
+.color-gradient01 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+  background: rgba(0, 131, 210, 1.00); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(0, 131, 210, 1.00) 0%, rgba(0, 178, 210, 1.00) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+.test-blue {
+  background-color: $blue;
+}
+
+.test-orange {
+  background-color: $orange;
+}
+
+.test-deepGray {
+  background-color: $deepGray;
+}
+
+.test-gray {
+  background-color: $gray;
+}
+
+.test-lightGray {
+  background-color: $lightGray;
+}
+
+
+
+
