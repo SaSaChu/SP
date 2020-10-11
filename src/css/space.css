@@ -22,46 +22,4 @@ footer .top .left div a { padding: 10px 0; text-decoration: none; }
 footer .top .right { text-align: right; }
 footer .last { position: relative; display: flex; justify-content: space-between; background-color: #03abec; height: 80px; padding: 10px 10%; text-align: left; align-items: center; }
 
-.text_left { text-align: left; }
-
-.text_cent { text-align: center; }
-
-.color-gradient01 { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */ background: #0083d2; /* Old browsers */ background: -moz-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */ }
-
-.type13_W { font-size: 1rem; color: white; }
-
-.type14_B { font-size: 1.1rem; color: #008ed8; }
-
-.type14_G { font-size: 1.1rem; color: #4b4b4b; }
-
-.type14_dG { font-size: 1.1rem; color: #3a3a3a; }
-
-.bold_type14_lG { font-size: 1.1rem; color: #a4a4a4; font-weight: bolder; }
-
-.type16_B { font-size: 1.2rem; color: #008ed8; }
-
-.type16_G { font-size: 1.2rem; color: #4b4b4b; }
-
-.type16_dG { font-size: 1.2rem; color: #3a3a3a; }
-
-.type16_W { font-size: 1.2rem; color: white; }
-
-.type16_lG { font-size: 1.2rem; color: #a4a4a4; }
-
-.bold_type18_W { font-size: 1.5rem; color: white; font-weight: bolder; }
-
-.bold_type18_B { font-size: 1.5rem; color: #008ed8; font-weight: bolder; }
-
-.bold_type18_O { font-size: 1.5rem; color: #ff7902; font-weight: bolder; }
-
-.bold_type20_B { font-size: 1.6rem; color: #008ed8; font-weight: bolder; }
-
-.type20_dG { font-weight: 1.6rem; color: #3a3a3a; }
-
-.bold_type50_dG { font-size: 4rem; color: #3a3a3a; font-weight: bolder; }
-
-.bold_type50_B { font-size: 4rem; color: #008ed8; font-weight: bolder; }
-
-.bold_type50_W { font-size: 4rem; color: white; font-weight: bolder; }
-
-.bold_type60_dG { font-size: 5rem; color: #3a3a3a; font-weight: bolder; }
+.mR15 { margin-right: 15px; }
