@@ -6,232 +6,441 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-	<title>Ginkgo！</title>
+	<title>SpotCam</title>
 
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
+	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+	<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
 	
-	<script language="javascript" type="text/javascript" src="js/_/swiper-bundle.min.js"></script>
+	<!-- <script language="javascript" type="text/javascript" src="js/_/jquery-1.12.4.min.js"></script> -->
+	<!-- <script language="javascript" type="text/javascript" src="js/_/swiper-bundle.min.js"></script> -->
 	<script language="javascript" type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
-	<!-- <h1>你好，世界！</h1>
-    <span style="color: rgba(120, 120, 120, 1.00);">這是 <b>Ginkgo</b>，你目前版本是 <b>5.0.0</b></span> -->
 	<header>
-		<div class="header-wrapper">
-			<h1 class="logo">
-				<a href="#" title="Spotcam">Spotcam</a>
-			</h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="#"> Feature </a></li>
-					<li><a href="#"> Cloud Service</a></li>
-					<li><a href="#"> Now On Air </a></li>
-					<li><a href="#"> Support </a></li>
-				</ul>
-			</nav>
-			<div class="action">
-				<ul>
-					<li><a href="#"> Login </a></li>
-					<li><a href="#"> Shop </a></li>
-				</ul>
+		<!-- 10/12 新增 mt40 -->
+		<div class="container mT40">
+			<div class="flex-box">
+				<div class="header-left">
+					<div id="m-menu" class="icon-menu">
+						<nav></nav>
+					</div>
+					<h1 class="logo">
+						<a class="logo-href" href="#" title="Spotcam">Spotcam</a>
+					</h1>
+					<div id="m-action">
+						<a href="#" class="icon icon-shopping-cart"></a>
+					</div>
+				</div>
+				<div class="header-right">
+					<div class="flex-box">
+					<nav id="nav">
+						<ul class="menu">
+							<li class="menu-item type16_dG">
+								Feature <i class="icon-chevron-down"></i>
+								<div class="dropdown-menu">
+									<div class="drop-out">
+										<ul class="sub-menu">
+											<li class="sub-menu-item">
+												<a href="#" class="sub-menu-item-link"> Monitoring Camera </a>
+											</li>
+											<li class="sub-menu-item">
+												<a href="#" class="sub-menu-item-link"> Video Doorbell </a>
+											</li>
+											<li class="sub-menu-item">
+												<a href="#" class="sub-menu-item-link"> Wire-Free Camera </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="menu-item type16_dG">
+								Cloud Service <i class="icon-chevron-down"></i>
+								<div class="dropdown-menu">
+									<div class="drop-out">
+										<ul class="sub-menu">
+											<li class="sub-menu-item">
+												Monitoring Camera <i class="icon-chevron-down"></i>
+												<div class="dropdown-sub-menu">
+													<ul>
+														<li><a href="#"> Cloud Video Storage </a></li>
+														<li><a href="#"> Cloud Video AI </a></li>
+														<li><a href="#"> Smart Connection </a></li>
+													</ul>
+												</div>	
+											</li>
+											<li class="sub-menu-item">
+												Video Doorbell <i class="icon-chevron-down"></i>
+												<div class="dropdown-sub-menu">
+													<ul>
+														<li><a href="#"> Cloud Video Backup </a></li>
+														<li><a href="#"> Smart Connection </a></li>
+														<li></li>
+													</ul>
+												</div>	
+											</li>
+											<li class="sub-menu-item">
+												Wire-Free Camera <i class="icon-chevron-down"></i>
+												<div class="dropdown-sub-menu">
+													<ul>
+														<li><a href="#"> Cloud Video Backup </a></li>
+														<li><a href="#"> Smart Connection </a></li>
+														<li></li>
+													</ul>
+												</div>	
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="menu-item"><a class="type16_dG" href="#"> Now On Air </a></li>
+							<li class="menu-item"><a class="type16_dG" href="#"> Support </a></li>
+						</ul>
+					</nav>
+					<div class="action">
+						<ul>
+							<li><a href="#" class="btn_roundW mR15 icon-user text_cent"></a></li>
+							<li><a href="#" class="btn_roundW icon-shopping-cart text_cent"></a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
 			</div>
 		</div>
 	</header>
 
-	<section class="banner-wrapper">
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-			  <div class="swiper-slide">
-				  <div class="swiper-content">
-					  <div class="swiper-content-img">
-						<img src="https://fakeimg.pl/1920x1080/?text=Hello">
-					  </div>
-					  <div class="swiper-content-text">
-						<h4>Weatherproof Solution</h4>
-						<h2>Never miss a moment <br />with Arlo Smart.</h2>
-						<button>Learn More</button>
-					  </div>
-				  </div>
-			  </div>
-			  <div class="swiper-slide">
-				<div class="swiper-content">
-					<div class="swiper-content-img">
-					  <img src="https://fakeimg.pl/1920x1080/?text=Hello2">
-					</div>
-					<div class="swiper-content-text">
-					  <h4>Weatherproof Solution</h4>
-					  <h2>Never miss a moment <br />with Arlo Smart.</h2>
-					  <button>Learn More</button>
+	<section class="banner">
+		<div class="slider single-item">
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
+						<img src="../img/bg_cent01.png" >
+					</picture>
+				</div>
+				<div class="slider-content-text">
+					<div class="container">
+						<div class="slider-content-text-container">
+							<h4 class="bold_type16_dG">Weatherproof Solution1</h4>
+							<h2 class="bold_type60_dG">Never miss a moment <br />with Arlo Smart.</h2>
+							<a class='btn_gradualB'>Learn more</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-slide">
-				<div class="swiper-content">
-					<div class="swiper-content-img">
-					  <img src="https://fakeimg.pl/1920x1080/?text=Hello3">
-					</div>
-					<div class="swiper-content-text">
-					  <h4>Weatherproof Solution</h4>
-					  <h2>Never miss a moment <br />with Arlo Smart.</h2>
-					  <button>Learn More</button>
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
+						<img src="../img/bg_cent01.png" >
+					</picture>
+				</div>
+				<div class="slider-content-text">
+					<div class="container">
+						<div class="slider-content-text-container">
+							<h4 class="bold_type16_dG">Weatherproof Solution2</h4>
+							<h2 class="bold_type60_dG">Never miss a moment <br />with Arlo Smart.</h2>
+							<a class='btn_gradualB'>Learn more</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			  
-			</div>
-			<!-- If we need pagination -->
-			<div class="my-swiper-pagination">
-				<div class="swiper-pagination-item">
-					<div class="swiper-pagination-item-img">
-						<img src="https://fakeimg.pl/20x20/ff0000/?text=1">
-					</div>
-					<div class="swiper-pagianation-item-text">
-						Indoor Solution
-					</div>
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
+						<img src="../img/bg_cent01.png" >
+					</picture>
 				</div>
-				<div class="swiper-pagination-item">
-					<div class="swiper-pagination-item-img">
-						<img src="https://fakeimg.pl/20x20/ff0000/?text=1">
-					</div>
-					<div class="swiper-pagianation-item-text">
-						Indoor Solution
-					</div>
-				</div>
-				<div class="swiper-pagination-item">
-					<div class="swiper-pagination-item-img">
-						<img src="https://fakeimg.pl/20x20/ff0000/?text=1">
-					</div>
-					<div class="swiper-pagianation-item-text">
-						Indoor Solution
-					</div>
-				</div>
-				<div class="swiper-pagination-item">
-					<div class="swiper-pagination-item-img">
-						<img src="https://fakeimg.pl/20x20/ff0000/?text=1">
-					</div>
-					<div class="swiper-pagianation-item-text">
-						Indoor Solution
-					</div>
-				</div>
-				<div class="swiper-pagination-item">
-					<div class="swiper-pagination-item-img">
-						<img src="https://fakeimg.pl/20x20/ff0000/?text=1">
-					</div>
-					<div class="swiper-pagianation-item-text">
-						Indoor Solution
+				<div class="slider-content-text">
+					<div class="container">
+						<div class="slider-content-text-container">
+							<h4 class="bold_type16_dG">Weatherproof Solution3</h4>
+							<h2 class="bold_type60_dG">Never miss a moment <br />with Arlo Smart.</h2>
+							<a class='btn_gradualB'>Learn more</a>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+		</div>
+		<div class="progressBar">
+			<div class="progressBar-container">
+				<div class="progressBar-items">
+					
+					<div class="progressBar-item show">
+						<span data-slick-index="0" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s01.png">
+							</div>
+							<div class="progressBar-item-text">
+								Indoor Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					<div class="progressBar-item">
+						<span data-slick-index="1" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s02.png">
+							</div>
+							<div class="progressBar-item-text">
+								Pan/Tilt Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					<div class="progressBar-item">
+						<span data-slick-index="2" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s01.png">
+							</div>
+							<div class="progressBar-item-text">
+								Weatherproof Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					<div class="progressBar-item">
+						<span data-slick-index="3" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s04.png">
+							</div>
+							<div class="progressBar-item-text">
+								Smart Home Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					<div class="progressBar-item">
+						<span data-slick-index="4" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s05.png">
+							</div>
+							<div class="progressBar-item-text">
+								Video Doorbell Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					<div class="progressBar-item">
+						<span data-slick-index="5" class="progressBarLine"></span>
+						<div class="progressBar-item-container">
+							<div class="icon-chevron-left"></div>
+							<div class="progressBar-item-img">
+								<img src="../img/pro_s06.png">
+							</div>
+							<div class="progressBar-item-text">
+								Wire-Free Solution
+							</div>
+							<div class="icon-chevron-right"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
 
-			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-		
-			<!-- If we need scrollbar -->
-			<!-- <div class="swiper-scrollbar"></div> -->
-		  </div>	
-	</section>
-	<section class="section1">
-			<!-- <img src="https://fakeimg.pl/1920x720/?text=s1"> -->
-			<div class="section1-text">
-				<h2>Stay connected anytime <br/> on any devices</h2>
-  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ab eveniet! Voluptas fugiat laboriosam quod dolorem, ex officia amet id omnis tempore, necessitatibus, tempora repudiandae adipisci quas consequuntur molestiae eum!</p>
+	<div class="section1">
+		<div class="container">
+			<div class="flex-box">
+				<div class="section1-text">
+					<h2 class="bold_type50_dG">Stay connected anytime <br /> on any devices</h2>
+					<p>Smart phone, tablet, laptop, or PC. Receive alerts by email or mobile APP, and watch real-time video
+						whenever you are connected to the internet.</p>
+					<div class="section1-action">
+						<a href="#"><img src="../img/btn_app01.png" alt=""></a>
+						<a href="#"><img src="../img/btn_app02.png" alt=""></a>
+					</div>
+				</div>
+				<div class="section1-img">
+					<img src="../img/pic_family.png" alt="">
+				</div>
 			</div>
-			<div class="section1-img">
-				<img src="https://fakeimg.pl/810x480/ff0000/?text=i1" alt="">
-			</div>
-	</section>
-	<section class="section2">
-		<div class="section2-text">
-			<h2>Easily setup<br/> in a matter of seconds</h2>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ab eveniet! Voluptas fugiat laboriosam quod dolorem, ex officia amet id omnis tempore, necessitatibus, tempora repudiandae adipisci quas consequuntur molestiae eum!</p>
 		</div>
-	</section>
+	</div>
+
+	<div class="section2">
+		<div class="container">
+			<div class="section2-text">
+				<h2 class="bold_type50_B">Easily setup<br /> in a matter of seconds</h2>
+				<p class="type16_dG">Connect your SpotCam to WiFi and apply an account on MySpotCam.com, then you are ready to go!Setup can
+					be done easily with PC/Laptop/Mobile/Tablet.</p>
+			</div>
+		</div>
+	</div>
+
 	<section class="section3">
-		<div class="section3-text">
-			<h2>View it now and <br/> save for later</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ab eveniet! Voluptas fugiat laboriosam quod dolorem, ex officia amet id omnis tempore, necessitatibus, tempora repudiandae adipisci quas consequuntur molestiae eum!</p>
-			<button>Learn More</button>
-		</div>
-		<div class="section3-img">
-			<img src="https://fakeimg.pl/810x480/ff0000/?text=flip" alt="">
+		<div class="container">
+			<div class="flex-box">
+				<div class="section3-text text_left">
+					<h2 class="bold_type50_W">View it now and <br /> save for later</h2>
+					<p class="type16_W">Choose our NVR plan to store and review video.
+						Server is no longer required when using SpotCam.</p>
+					<a href="#" class="bold_type18_W">
+						<i class="icon-chevron-right"></i>
+						Learn More
+					</a>
+				</div>
+				<div class="section3-img">
+					<img src="../img/phone01.png" alt="">
+					<img src="../img/phone02.png" alt="">
+					<img src="../img/phone03.png" alt="">
+				</div>
+			</div>
 		</div>
 	</section>
+
 	<section class="section4">
-		<div class="section4-text">
-			<h2>SpotCam Video<br/> AI Service</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ab eveniet! Voluptas fugiat laboriosam quod dolorem, ex officia amet id omnis tempore, necessitatibus, tempora repudiandae adipisci quas consequuntur molestiae eum!</p>
-			<button>Learn More</button>
+		<div class="flex-box">
+			<div class="section4-text text_left">
+			<div class="container">
+				
+					<h2 class="bold_type50_B">SpotCam Video<br /> AI Service</h2>
+					<p class="type16_dG">Enhance security with SpotCam video analytic service. Get rid of false alarms and be
+						notified for what really matters.</p>
+					<div class="btn_gradual50">	
+						<div class="gradua_centG icon-chevron-right text_cent">Learn More</div>
+					</div>
+				</div>
+			</div>
+			<div class="section4-img">
+				<img src="../img/bg_cent04.png" alt="">
+			</div>
 		</div>
-		<div class="section4-img">
-			<img src="https://fakeimg.pl/810x480/ff0000/?text=i2" alt="">
 		</div>
 	</section>
+
 	<section class="section5">
-		<div class="section5-text">
-			<h2>SpotCam <br/> Smart Connection</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quia inventore exercitationem illo similique quae blanditiis, est nemo ullam molestiae repellat </p>
-		</div>
-		<div class="section5-shop">
-			<img src="https://fakeimg.pl/120x80/?text=shop1" alt="">	
-			<img src="https://fakeimg.pl/120x80/?text=shop2" alt="">
-			<img src="https://fakeimg.pl/120x80/?text=shop3" alt="">
-			<img src="https://fakeimg.pl/120x80/?text=shop4" alt="">
-		</div>
-		<div class="section5-img">
-			<img src="https://fakeimg.pl/1920x600/ff0000/?text=i3" alt="">	
+		<div class="section5-wrapper">
+			<div class="section5-text">
+				<h2 class="bold_type50_B">SpotCam <br /> Smart Connection</h2>
+				<p class="type16_dG">Build up your own smart home system by connecting SpotCam with all other popular smart
+					gadgets you love.</p>
+			</div>
+			<div class="section5-shop">
+				<img src="../img/brand_logo.png" alt="">
+			</div>
+			<div class="section5-img">
+				<img src="../img/bg_cent05.png" alt="">
+			</div>
 		</div>
 	</section>
 	<section class="section6">
-		<div class="section6-text">
-			<h2>Editor's Opinion</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<button>1/11</button>
-		</div>
-		<div class="section6-img">
-			<img src="https://fakeimg.pl/810x480/ff0000/?text=slider" alt="">
+		<div class="section6-wrapper">
+			<div class="section6-text">
+				<h2>Editor's Opinion</h2>
+				<p>See what professional testers from popular media say about SpotCam.</p>
+				<button>1/11</button>
+			</div>
+			<div class="section6-img">
+				<img src="https://fakeimg.pl/810x480/ff0000/?text=slider" alt="">
+			</div>
 		</div>
 	</section>
 	<footer>
-		<div class="top">
-			<div class="left">
-				<div class="top-section1">
-					<a href="#">Home</a>
-					<a href="#">Store</a>
-					<a href="#">Blog</a>
+		<div class="container">
+			<!-- 10/12 新增樣式 mT25 -->
+			<div class="footer-top mT25">
+				<div class="left">
+					<div class="f-logo">
+						<a href="/"><img src="../img/all_logo.png" alt=""></a>
+					</div>
+					<div class="w-ft-info">
+						<div class="info-section">
+							<a href="#" class='type16_lG'>Home</a>
+							<a href="#" class='type16_lG'>Store</a>
+							<a href="#" class='type16_lG'>Blog</a>
+						</div>
+						<div class="info-section">
+							<a href="#" class='type16_lG'>About</a>
+							<a href="#" class='type16_lG'>Contact</a>
+							<a href="#" class='type16_lG'>Privacy Policy</a>
+							<a href="#" class='type16_lG'>Terms of Service</a>
+						</div>
+						<div class="info-section">
+							<a href="#" class='type16_lG'>Support</a>
+							<a href="#" class='type16_lG'>Become Reseller</a>
+							<a href="#" class='type16_lG'>IFTTT</a>
+						</div>
+					</div>
+					<nav class="m-ft-info">
+						<ul class="info-section">
+							<li class="info-section-item dropdown-menu type16_dG "> Company <i class="icon-plus"></i>
+								<div class="m-ft-dropdown-menu">
+									<ul class="m-ft-sub-menu">
+										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">About</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Contact</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Privacy Policy</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Terms of Service</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="info-section-item"><a href="#" class="type16_dG">Support</a></li>
+							<li class="info-section-item"><a href="#" class="type16_dG">Store</a></li>
+							<li class="info-section-item"><a href="#" class="type16_dG">Blog</a></li>
+						</ul>
+					</nav>
+					<!-- 10/12 這個區域有修正 -->
+					<div class="social-section">
+						<a href="" class="btn_social icon-Social_blog text_cent mR10"></a>
+						<a href="" class="btn_social icon-Social_fb text_cent mR10"></a>
+						<a href="" class="btn_social icon-Social_tw text_cent mR10"></a>
+						<a href="" class="btn_social icon-Social_u2 text_cent"></a>
+					</div>
 				</div>
-				<div class="top-section2">
-					<a href="#">About</a>
-					<a href="#">Contact</a>
-					<a href="#">Privacy Policy</a>
-					<a href="#">Terms of Service</a>
+				<div class="right">
+					<div class="mail-section">
+						<!-- 10/12 更新h3樣式 -->
+						<h3 class='bold_type16_lG mD25'>Subscribe to our newsletter for news and promos</h3>
+						<form action="#">
+							<input class="input03 type13_lG" type="email" name="email" placeholder="Email Subscription">
+							<button type="submit" class="email-button"><i class="icon-chevron-right"></i></button>
+						</form>
+					</div>
+					<div class="attest-section">
+						<img src="../img/attest01.png" alt="">
+						<img src="../img/attest02.png" alt="">
+						<img src="../img/attest03.png" alt="">
+					</div>
 				</div>
-				<div class="top-section3">
-					<a href="#">Support</a>
-					<a href="#">Become Reseller</a>
-					<a href="#">IFTTT</a>
-				</div>
-			</div>
-			<div class="right">
-				<h3>Subscribe to our newsletter for news and promos</h3>
-				<input type="email" name="email" id="">
 			</div>
 		</div>
-		
-		<div class="last">
-			<div class="language">
-				<select name="language" id="">
-					<option value="0">Language</option>
-					<option value="1">EN</option>
-					<option value="2">TW</option>
-					<option value="3">JP</option>
-				</select>
-			</div>
-			<div class="copy-right">
-				2020 spotcam co., Ltd. All Right Reseverd
+		<div class="footer-bottom">
+			<!-- 10/12 新增 div container -->
+			<div class='container'>
+				<div class="footer-bottom-wrapper">
+					<div class="language type16_W">
+						<i class="icon-earth"></i>
+						<select name="language" id="">
+							<option value="0">Language</option>
+							<option value="1">EN</option>
+							<option value="2">TW</option>
+							<option value="3">JP</option>
+						</select>
+					</div>
+					<div class="copy-right type13_W">
+						2020 spotcam co., Ltd. All Right Reseverd
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

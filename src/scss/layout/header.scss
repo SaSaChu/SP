@@ -1,55 +1,242 @@
+@import "_/_block";
+@import "_/_color";
+@import "_/_text";
+@import "_/_link";
+@import "_/_space";
 header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 3;
-    padding: 0 10%;
+    width: 100%;
 
-    .header-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h1 {
-            // flex: 1;
-            justify-self: start;
+    @media screen and (max-width:450px) {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1.00);
+    }
 
-            a {
-                text-decoration: none;
-            }
-        }
-        #nav {
-            flex: 2;
+    .header-left {
+        flex-basis: 200px;
+
+        @media screen and (max-width:450px) {
             display: flex;
-            justify-content: center;
-            ul {
-                display: flex;
-                padding: 0;
-                list-style-type: none;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 100%;
+        }
 
-                li {
+        .logo {
+    
+            .logo-href {
+                display: inline-block;
+                background-image: url(../img/all_logo.png);
+                width: 180px;
+                height: 41px;
+                text-decoration: none;
+                text-indent: -9999px;
+            }
 
-                    margin: 0 5px;
-                    padding: 0 5px;
-                    font-size: 1.2rem;
-                    a {
-                        text-decoration: none;
-                    }
-                }
+            @media screen and (max-width:450px) {
+                flex: 1;
+                margin: 1rem;
             }
         }
-    
-        .action {
-            ul {
-                display: flex;
-                list-style: none;
 
-                li {
-                    a {
-                        text-decoration: none;
-                    }
+        #m-menu {
+            display: none;
+
+            @media screen and (max-width:450px) {
+                flex: 1;
+                display: block;
+                font-size: 2rem;
+                text-align: left;
+            }
+        }
+
+        #m-action {
+            display: none;
+
+            @media screen and (max-width:450px) {
+                flex: 1;
+                display: block;
+                font-size: 1.5rem;
+                text-align: right;
+
+                a {
+                    text-decoration: none;
+                    color: $deepGray;
                 }
             }
         }
     }
+    
+    .header-right{
+        flex: 1;
+
+        @media screen and (max-width:450px) {
+            display: none;
+        }
+       
+        #nav {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+            .menu {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0;
+                background-color: rgba(255, 255, 255, 1.00);
+                border-radius: 50px;
+                list-style-type: none;
+                
+    
+                .menu-item {
+                    margin: 0 5px;
+                    padding: 1.5rem 3rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+
+                    .icon-chevron-down {
+                        color: $orange;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: $blue; 
+
+                        a {
+                            color: $blue;
+                        }
+
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        display: none;
+                        width: 100%;
+                        position: absolute;
+                        top: 52px;
+                        left: 0;
+
+                        .drop-out {
+                            position: relative;
+                            margin-top: 2rem;
+                            width: 100%;
+
+                            &:before, &:after {
+                                content: '';
+                                position: absolute;
+                                left: calc(50% - (.5rem / 2));
+                                display: block;
+                                border-style: solid;
+                                border-width: 0 .5rem .8rem .5rem;
+                                border-color: transparent;
+                            }
+    
+                            &:before {
+                                top: -.7em;
+                                border-bottom-color: rgba(255,255,255,1.0);
+                              }
+                              
+                            &:after {
+                                top: -.7em;
+                                border-bottom-color: rgba(255,255,255,1.0);
+                            }
+
+                            .sub-menu {
+                                display: flex;
+                                padding: 0;
+                                border-radius: 5px;
+                                background-color: rgba(255, 255, 255, 1.00);
+                                list-style-type: none;
+
+                                .sub-menu-item {
+                                    flex: 1;
+                                    padding: 1.5rem;
+
+                                    &, .sub-menu-item-link, .icon-chevron-down {
+                                        color: $deepGray;
+                                    } 
+
+                                    &:hover {
+                                        background-color: rgba(247, 247, 247, 1.00);
+                                       
+                                        &, .sub-menu-item-link, .icon-chevron-down {
+                                            color: $blue;
+                                        }
+
+                                        .dropdown-sub-menu {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .dropdown-sub-menu {
+                                        display: none;
+                                        width: 100%;
+                                        position: absolute;
+                                        top: 52px;
+                                        left: 0; 
+
+                                        ul {
+                                            display: flex;
+                                            padding: 0;
+                                            border-radius: 5px;
+                                            background-color: rgba(255, 255, 255, 1.00);
+                                            list-style-type: none;
+
+                                            li {
+                                                flex: 1;
+                                                padding: 1.5rem;
+                                                background-color: rgba(247, 247, 247, 1.00);
+
+                                                a {
+                                                    color: $deepGray; 
+                                                }
+
+                                                &:hover {
+                                                    a {
+                                                        color: $blue;
+                                                    }
+                                                }
+
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }                       
+                    }
+
+                   
+                }
+            }
+
+            
+        }
+        .action {
+            @media screen and (max-width:450px) {
+                display: none;
+            }
+    
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                padding: 0;
+    
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+    
 }

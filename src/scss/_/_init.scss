@@ -9,6 +9,10 @@
 
 @include init-ginkgo;
 
+html {
+  font-size: 13px;
+}
+
 body {
   position: relative;
 
@@ -19,7 +23,7 @@ body {
   padding: 0;
   color: rgba(90, 90, 90, 1.00);
 
-  font-size: medium;
+  font-size: 13px;
   text-align: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, "微軟正黑體";
   

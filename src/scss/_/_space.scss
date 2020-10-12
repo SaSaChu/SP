@@ -1,11 +1,12 @@
 
-@import "_/_init";
-@import "_/_public";
-@import "layout/header";
-@import "layout/footer";
+@import "Ginkgo";
 
 .mR15 {
   margin-right: 15px;
+}
+
+.mR10 {
+  margin-right: 10px;
 }
 
 .mT40 {
@@ -14,4 +15,8 @@
 
 .mT25 {
   margin-top: 25px;
+}
+
+.mD25 {
+  margin-bottom: 25px;
 }

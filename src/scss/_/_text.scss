@@ -1,8 +1,6 @@
 
 @import "_/_init";
 @import "_/_public";
-@import "layout/header";
-@import "layout/footer";
 
 
 $btn_b: rgba(15, 131, 212, 1.00); // btn中文字顏色
@@ -11,7 +9,6 @@ $orange:rgba(255, 121, 2, 1.00); // 橘色
 $deepGray: rgba(58, 58, 58, 1.00); // 標題黑色（深灰）
 $gray: rgba(75, 75, 75, 1.00); // 內文顏色（中灰）
 $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
-
 
 
 .text_left {
@@ -33,11 +30,20 @@ $lightGray: rgba(164, 164, 164, 1.00); // 淡灰色
 }
 
 
+h3 {
+  margin: 0;
+}
+
 
 // 13pt
 .type13_W {
   font-size: 1rem;
   color: white;
+}
+
+.type13_lG {
+  font-size: 1rem;
+  color: $lightGray;
 }
 
 
