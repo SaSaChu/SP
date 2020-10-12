@@ -1,6 +1,24 @@
 
 @import "Ginkgo";
 
+.all_boxs {
+  display: inline-block;
+  width: 100%;
+}
+
+.order_left {
+  float: left;
+}
+
+.order_right {
+  float: right;
+}
+
+
+.mRL15 {
+  margin: 0 15px;
+}
+
 .mR15 {
   margin-right: 15px;
 }
@@ -19,4 +37,20 @@
 
 .mD25 {
   margin-bottom: 25px;
+}
+
+.mD35 {
+  margin-bottom: 35px;
+}
+
+.mD30 {
+  margin-bottom: 30px;
+}
+
+.mT_5 {
+  margin-top: -5px;
+}
+
+.mTD3040 {
+  margin: 2.3rem 0 3rem 0;
 }

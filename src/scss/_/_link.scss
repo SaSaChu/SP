@@ -14,6 +14,93 @@ button {
   border: 0;
 }
 
+// 白色圈圈learn more
+.btn_round_lW {
+  display: inline-block;
+  @include transition(all .3s);
+  
+  &:before {
+    display: inline-block;
+    content: '\e902';
+    font-family: "icon";
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    @include border-radius(25px);
+    font-size: 2.5rem;
+    color: white;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+    line-height: 54px;
+  }
+
+  &:hover, &:active {
+    color: $blue;
+
+    &:before {
+      color: $blue;
+      border: 3px solid $blue;
+    }
+
+    &:after {
+      color: $blue;
+    }
+  }
+}
+
+// 藍色色圈圈learn more
+.btn_round_lb {
+  display: inline-block;
+  @include transition(all .3s);
+  
+  &:before {
+    display: inline-block;
+    content: '\e902';
+    font-family: "icon";
+    width: 50px;
+    height: 50px;
+    border: 3px solid $blue;
+    @include border-radius(25px);
+    font-size: 2.5rem;
+    color: $blue;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.5rem;
+    color: $blue;
+    font-weight: bolder;
+    line-height: 54px;
+  }
+
+  &:hover, &:active {
+    color: $blue2;
+
+    &:before {
+      color: $blue2;
+      border: 3px solid $blue2;
+    }
+
+    &:after {
+      color: $blue2;
+    }
+  }
+}
+
+
 .btn_roundW {
   display: inline-block;
   width: 50px;
@@ -21,7 +108,7 @@ button {
   background-color: white;
   @include border-radius(25px);
   color: $orange;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 45px;
   @include box-shadow(0 1px 4px 0 rgba(0, 35, 11, .1));
 }
@@ -88,66 +175,56 @@ button {
   border-image-slice: 1;
 }
 
-.btn_pretty{
-  cursor: pointer;
-  border: 0;
-  padding: 1em 3em;
-  font-size: 1.3rem;
-  border-radius: 20px;
+// banner的按鈕
+.gradient-box {
+  display: flex;
+  align-items: center;
+  //width: 50vw;
+  // width: 90%;
+  // margin: auto;
+  // max-width: 22em;
+
   position: relative;
-  background: transparent;
-  z-index: 1;
+  padding: .8rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  box-sizing: border-box;
+
+  $border: 3px;
   color: $blue;
-  @include transition(all .3s);
+  // background: #000;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: 2em;
 
-  &:hover, &:focus {
-    color: white;
+  &:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: 30px; /* !importanté */
+    background: linear-gradient(to right, rgba(0, 131, 210, 1.00), rgba(0, 178, 210, 1.00));
+  }
 
-    &:before {
-      -webkit-mask: none;
-      mask: none;
+  &.have_mark {
+    &:after {
+      display: inline-block;
+      content: '\e902';
+      font-family: 'icon';
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-left: 10px;
     }
   }
 
-  &:before {
-    z-index: -1;
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    border: 3px solid transparent;
-    border-radius: 25px;
-    background: linear-gradient(to right, rgba(0, 131, 210, 1.00), rgba(0, 178, 210, 1.00)) border-box;
-    mask:
-      radial-gradient(circle at bottom left ,transparent 20px,#fff 3px) 
-        top right/23px 23px,
-      radial-gradient(circle at top right   ,transparent 20px,#fff 3px) 
-        bottom left /23px 23px,
-      radial-gradient(circle at top left    ,transparent 20px,#fff 3px) 
-        bottom right/23px 23px,
-      radial-gradient(circle at bottom right,transparent 20px,#fff 3px) 
-        top left /23px 23px,
-      linear-gradient(to bottom,#fff 3px,transparent 3px),
-      linear-gradient(to top   ,#fff 3px,transparent 3px),
-      linear-gradient(to right ,#fff 3px,transparent 3px),
-      linear-gradient(to left  ,#fff 3px,transparent 3px);
-    mask-repeat:no-repeat;
-  
-  -webkit-mask:
-      radial-gradient(circle at bottom left ,transparent 20px,#fff 3px) 
-        top right/23px 23px,
-      radial-gradient(circle at top right   ,transparent 20px,#fff 3px) 
-        bottom left /23px 23px,
-      radial-gradient(circle at top left    ,transparent 20px,#fff 3px) 
-        bottom right/23px 23px,
-      radial-gradient(circle at bottom right,transparent 20px,#fff 3px) 
-        top left /23px 23px,
-      linear-gradient(to bottom,#fff 3px,transparent 3px),
-      linear-gradient(to top   ,#fff 3px,transparent 3px),
-      linear-gradient(to right ,#fff 3px,transparent 3px),
-      linear-gradient(to left  ,#fff 3px,transparent 3px);
-    -webkit-mask-repeat:no-repeat;
+  &:hover, &:active {
+    color: white;
+    background-image: -webkit-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
+    background-image: -moz-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); 
+    background-image: linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
   }
 }
+
+
