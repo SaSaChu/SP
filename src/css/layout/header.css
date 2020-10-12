@@ -87,6 +87,7 @@ button { display: inline-block; outline: 0; border: 0; }
 .btn_roundW { display: inline-block; width: 50px; height: 50px; background-color: white; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; color: #ff7902; font-size: 1.3rem; line-height: 45px; -moz-box-shadow: 0 1px 4px 0 rgba(0, 35, 11, 0.1); -webkit-box-shadow: 0 1px 4px 0 rgba(0, 35, 11, 0.1); box-shadow: 0 1px 4px 0 rgba(0, 35, 11, 0.1); }
 
 .btn_social { display: inline-block; width: 25px; height: 25px; border: 1px solid #a4a4a4; color: #4b4b4b; font-size: .8rem; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 23px; }
+.btn_social:hover, .btn_social:active { border: 1px solid #a4a4a4; color: #4b4b4b; }
 
 .btn_gradual50 { width: 50px; height: 50px; box-sizing: border-box; padding: 3px; border-radius: 50%; background-image: -webkit-linear-gradient(to right, #0083d2 0%, #00b2d2 100%); background-image: -moz-linear-gradient(to right, #0083d2 0%, #00b2d2 100%); background-image: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); }
 .btn_gradual50.btn_g35 { width: 35px; height: 35px; line-height: 29px; }
@@ -149,4 +150,3 @@ header .header-right #nav .menu .menu-item .dropdown-menu .drop-out .sub-menu .s
 header .header-right #nav .menu .menu-item .dropdown-menu .drop-out .sub-menu .sub-menu-item .dropdown-sub-menu ul li:hover a { color: #008ed8; }
 @media screen and (max-width: 450px) { header .header-right .action { display: none; } }
 header .header-right .action ul { display: flex; list-style: none; justify-content: space-between; padding: 0; }
-header .header-right .action ul li { margin: 0 20px; }
