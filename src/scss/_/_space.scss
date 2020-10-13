@@ -6,6 +6,13 @@
   width: 100%;
 }
 
+.m_centbox {
+  @include range-width(0, 450px) {
+    margin: 0 auto;
+    width: auto !important;
+  }
+}
+
 .order_left {
   float: left;
 }
@@ -29,6 +36,10 @@
 
 .mT40 {
   margin-top: 40px;
+
+  @include range-width(0, 450px) {
+    margin-top: 5px;
+  }
 }
 
 .mT25 {
@@ -37,10 +48,37 @@
 
 .mD25 {
   margin-bottom: 25px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+}
+
+.m_mT70 {
+  @include range-width(0, 450px) {
+    margin-top: 5.3rem
+  }
+}
+
+.m_mD30 {
+  @include range-width(0, 450px) {
+    margin-bottom: 2.3rem;
+  }
+}
+
+.m_mTD20 {
+  @include range-width(0, 450px) {
+    margin: 1.2rem 0;
+  }
 }
 
 .mD35 {
   margin-bottom: 35px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 25px;
+  }
 }
 
 .mD30 {
@@ -53,4 +91,19 @@
 
 .mTD3040 {
   margin: 2.3rem 0 3rem 0;
+
+  @include range-width(0, 450px) {
+    margin: 1.3rem 0 2rem 0;
+  }
 }
+
+.mTD10 {
+  margin: 10px 0;
+
+  @include range-width(0, 450px) {
+    margin: 40px 0 10px 0;
+  }
+}
+
+
+

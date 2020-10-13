@@ -10,28 +10,49 @@ $phone-width: 340px;
     width: 100%;
     max-width: $base-width;
 
-    @media screen and (max-width: 450px ){
-        padding: 0 1rem;
+    .big_banner {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 777;
+        // background-color: rgba(255, 0, 0, 0.2);
+
+        @include range-width(0, 450px) {
+            padding: 0 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1299px ){
+        padding: 0 1.5rem;
         max-width: 100%;
     }
+
+    
+}
+
+.row {
+    display: inline-block;
+    width: 100%;
 }
 
 .flex-box {
     display: flex;
 }
 
-.flex-jc-end {
-    justify-content: flex-end;
-}
+// .flex-jc-end {
+//     justify-content: flex-end;
+// }
 
-.flex-jc-ct {
-    justify-content: center;
-}
+// .flex-jc-ct {
+//     justify-content: center;
+// }
 
-.box-w-40 {
-    width: 40%;
-}
+// .box-w-40 {
+//     width: 40%;
+// }
 
-.box-w-60 {
-    width: 60%;
-}
+// .box-w-60 {
+//     width: 60%;
+// }

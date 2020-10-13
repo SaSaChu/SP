@@ -3,6 +3,7 @@
 @import "_/_text";
 @import "_/_link";
 @import "_/_space";
+
 header {
     position: absolute;
     top: 0;
@@ -29,16 +30,38 @@ header {
     
             .logo-href {
                 display: inline-block;
-                background-image: url(../img/all_logo.png);
+                // background-image: url(../img/all_logo.png);
                 width: 180px;
                 height: 41px;
                 text-decoration: none;
-                text-indent: -9999px;
+
+                i {
+                    text-indent: -9999px;
+                }
+
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 180px;
+                }
+
+                @include range-width(0, 450px) {
+                    width: 100%;
+                    max-width: 120px;
+                    margin-top: 20px;
+
+                    img {
+                        width: 100%;
+                        max-width: 120px;
+                    }
+                    
+                }
             }
 
             @media screen and (max-width:450px) {
                 flex: 1;
-                margin: 1rem;
+                margin: 0;
+                width: 120px;
             }
         }
 
@@ -90,11 +113,12 @@ header {
                 background-color: rgba(255, 255, 255, 1.00);
                 border-radius: 50px;
                 list-style-type: none;
+                padding: 0 1rem;
                 
     
                 .menu-item {
                     margin: 0 5px;
-                    padding: 1.5rem 3rem;
+                    padding: 1.5rem 1rem;
                     font-size: 1.2rem;
                     cursor: pointer;
 

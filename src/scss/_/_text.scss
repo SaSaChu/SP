@@ -10,6 +10,11 @@
 .text_cent {
   text-align: center;
 }
+.m_text_left {
+  @include range-width(0, 450px) {
+    text-align: left !important;
+  }
+}
 
 
 // 漸層01
@@ -23,7 +28,7 @@
 }
 
 
-h3, h2 {
+h3, h2, h4 {
   margin: 0;
 }
 
@@ -88,19 +93,41 @@ i {
 .type16_dG {
   font-size: 1.2rem;
   color: $deepGray;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 }
 
 .type16_W {
   font-size: 1.2rem;
   color: white;
+
+   @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 }
 
 .type16_lG {
   font-size: 1.2rem;
   color: $lightGray;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 }
 
 .bold_type16_lG {
+  font-size: 1.2rem;
+  color: $lightGray;
+  font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
+}
+
+.m_bold_type16_lG {
   font-size: 1.2rem;
   color: $lightGray;
   font-weight: bolder;
@@ -108,6 +135,10 @@ i {
 
 .type16_h23 {
   line-height: 1.8rem;
+
+  @include range-width(0, 450px) {
+    line-height: 1.6rem;
+  }
 }
 
 
@@ -158,18 +189,30 @@ i {
   font-size: 4rem;
   color: $deepGray;
   font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 2rem;
+  }
 }
 
 .bold_type50_B {
   font-size: 4rem;
   color: $blue;
   font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 2rem;
+  }
 }
 
 .bold_type50_W {
   font-size: 4rem;
   color: white;
   font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 2rem;
+  }
 }
 
 

@@ -20,8 +20,16 @@ footer {
                 display: none;
 
                 @include range-width(0, 450px) {
-                    margin: 1.5rem 0;
+                    display: inline-block;
+                    width: 100%;
+                    // margin: 1.5rem 0;
                     text-align: left;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                        max-width: 120px;
+                    }
                 }
             }
 
@@ -55,12 +63,18 @@ footer {
                     display: flex;
                     flex-direction: column;
                     text-align: left;
+                    width: 100%;
+                    float: left;
                 }
 
                 ul.info-section {
+                    padding: 0;
+                    list-style: none;
+
                     li.info-section-item {
                         padding: 1rem 0;
                         border-bottom: 1px solid rgba(225, 225, 225, 1.00);
+
                         &.dropdown-menu {
                             position: relative;
 
@@ -76,10 +90,18 @@ footer {
                         display: none;
                         position: relative;
 
-                        .m-ft-sub-menu-item {
-                            padding: 1rem;
-                        }
+                        .m-ft-sub-menu {
+                            padding: 0;
+                            list-style: none;
+                            .m-ft-sub-menu-item {
+                                padding: 1.5rem 15px .5rem 15px;
 
+                                &.m-ft-bt {
+                                    margin-top: 10px;
+                                    border-top: 1px solid rgba(225, 225, 225, 1.00);
+                                }
+                            }
+                        } 
                         &.show {
                             display: block;
                         }
@@ -89,6 +111,12 @@ footer {
             .social-section {
                 display: flex;
                 margin: 1rem 0 3rem 0;
+
+                @include range-width(0, 450px) {
+                    width: 100%;
+                    float: left;
+                    margin: 1rem 0;
+                }
 
                 a {
                     // padding: 1rem;
@@ -161,6 +189,10 @@ footer {
                 :nth-child(2) {
                     margin: 0 1rem;
                 }
+
+                @include range-width(0, 450px) {
+                    margin: 2rem 0;
+                }
             }
         }
     }
@@ -168,7 +200,7 @@ footer {
     .footer-bottom {
         
         background-color: $blue;
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         
 
         .footer-bottom-wrapper {

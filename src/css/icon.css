@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../icon/icomoon/fonts/icomoon.eot?1602226111') format('embedded-opentype'), url('../icon/icomoon/fonts/icomoon.woff?1602226111') format('woff'), url('../icon/icomoon/fonts/icomoon.ttf?1602226111') format('truetype'), url('../icon/icomoon/fonts/icomoon.svg?1602226111') format('svg'); }
+@font-face { font-family: "icon"; src: url('../icon/icomoon/fonts/icomoon.eot?1602518460') format('embedded-opentype'), url('../icon/icomoon/fonts/icomoon.woff?1602518460') format('woff'), url('../icon/icomoon/fonts/icomoon.ttf?1602518460') format('truetype'), url('../icon/icomoon/fonts/icomoon.svg?1602518460') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-Social_blog:before { content: "\e90a"; }

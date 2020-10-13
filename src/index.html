@@ -9,7 +9,6 @@
 	<title>SpotCam</title>
 
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
 	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
@@ -19,7 +18,6 @@
 	<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
 	
 	<!-- <script language="javascript" type="text/javascript" src="js/_/jquery-1.12.4.min.js"></script> -->
-	<!-- <script language="javascript" type="text/javascript" src="js/_/swiper-bundle.min.js"></script> -->
 	<script language="javascript" type="text/javascript" src="js/index.js"></script>
 </head>
 
@@ -33,10 +31,14 @@
 						<nav></nav>
 					</div>
 					<h1 class="logo">
-						<a class="logo-href" href="#" title="Spotcam">Spotcam</a>
+						<a class="logo-href" href="#" title="Spotcam">
+							<img src="../img/all_logo@2x.png">
+							<i>Spotcam</i>
+						</a>
 					</h1>
 					<div id="m-action">
-						<a href="#" class="icon icon-shopping-cart"></a>
+						<!-- 10/13 新增style -->
+						<a href="#" class="icon icon-shopping-cart" style='margin-right:5px;'></a>
 					</div>
 				</div>
 				<div class="header-right">
@@ -127,11 +129,14 @@
 				</div>
 				<div class="slider-content-text">
 					<div class="container">
-						<div class="slider-content-text-container">
-							<h4 class="bold_type16_dG">Weatherproof Solution1</h4>
-							<!-- 10/12 新增mD35 -->
-							<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-							<a href=""><button class="gradient-box have_mark">Click me</button></a>
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -145,11 +150,14 @@
 				</div>
 				<div class="slider-content-text">
 					<div class="container">
-						<div class="slider-content-text-container">
-							<h4 class="bold_type16_dG">Weatherproof Solution2</h4>
-							<!-- 10/12 新增mD35 -->
-							<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-							<a href=""><button class="gradient-box have_mark">Click me</button></a>
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -163,16 +171,18 @@
 				</div>
 				<div class="slider-content-text">
 					<div class="container">
-						<div class="slider-content-text-container">
-							<h4 class="bold_type16_dG">Weatherproof Solution3</h4>
-							<!-- 10/12 新增mD35 -->
-							<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-							<a href=""><button class="gradient-box have_mark">Click me</button></a>
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		<div class="progressBar">
 			<div class="progressBar-container">
@@ -181,14 +191,14 @@
 					<div class="progressBar-item show">
 						<span data-slick-index="0" class="progressBarLine"></span>
 						<div class="progressBar-item-container">
-							<div class="icon-chevron-left"></div>
+							<div class="icon-chevron-left" style='color:rgba(167, 171, 186, 1.00);'></div>
 							<div class="progressBar-item-img">
 								<img src="../img/pro_s01.png">
 							</div>
 							<div class="progressBar-item-text">
 								Indoor Solution
 							</div>
-							<div class="icon-chevron-right"></div>
+							<div class="icon-chevron-right" style='color:rgba(167, 171, 186, 1.00);'></div>
 						</div>
 					</div>
 					<div class="progressBar-item">
@@ -264,10 +274,11 @@
 
 	<div class="section1">
 		<div class="container">
-			<div class="flex-box">
+			<div class="row">
 				<div class="section1-text">
 					<!-- 10/12 新增 mD25 -->
-					<h2 class="bold_type50_dG mD25">Stay connected anytime <br /> on any devices</h2>
+					<!-- 10/13 新增 m_mT -->
+					<h2 class="bold_type50_dG mD25 m_mT70">Stay connected anytime <br /> on any devices</h2>
 					<!-- 10/12 新增 type16_h23 -->
 					<p class="type16_dG type16_h23">Smart phone, tablet, laptop, or PC. Receive alerts by email or mobile APP, and watch real-time video
 						whenever you are connected to the internet.</p>
@@ -285,19 +296,22 @@
 
 	<div class="section2">
 		<div class="container">
-			<div class="section2-text">
-				<!-- 10/12 新增 mD25 -->
-				<h2 class="bold_type50_B mD25">Easily setup<br /> in a matter of seconds</h2>
-				<!-- 10/12 新增 type16_h23 -->
-				<p class="type16_dG type16_h23">Connect your SpotCam to WiFi and apply an account on MySpotCam.com, then you are ready to go!Setup can
-					be done easily with PC/Laptop/Mobile/Tablet.</p>
+			<div class="row">
+				<div class="section2-text">
+					<!-- 10/12 新增 mD25 -->
+					<h2 class="bold_type50_B mD25">Easily setup<br /> in a matter of seconds</h2>
+					<!-- 10/12 新增 type16_h23 -->
+					<p class="type16_dG type16_h23">Connect your SpotCam to WiFi and apply an account on MySpotCam.com, then you are ready to go!Setup can
+						be done easily with PC/Laptop/Mobile/Tablet.</p>
+				</div>
 			</div>
 		</div>
 	</div>
+	
 
 	<section class="section3">
 		<div class="container">
-			<div class="flex-box">
+			<div class="row flex-box">
 				<div class="section3-text text_left">
 					<!-- 10/12 新增 mD25 -->
 					<h2 class="bold_type50_W mD25">View it now and <br /> save for later</h2>
@@ -305,71 +319,92 @@
 					<p class="type16_W type16_h23">Choose our NVR plan to store and review video.
 						Server is no longer required when using SpotCam.</p>
 					<!-- 10/12 修改樣式 -->
-					<a href="" class="btn_round_lW mT40" title='Learn More'></a>
+					<!-- 10/13 新增 m_mD20 -->
+					<a href="" class="btn_round_lW mT40 m_mTD20" title='Learn More'></a>
 				</div>
 				<div class="section3-img">
-					<img src="../img/phone01.png" alt="">
-					<img src="../img/phone02.png" alt="">
-					<img src="../img/phone03.png" alt="">
+					<div class="row">
+						<img src="../img/phone01.png" alt="">
+					</div>
+					<div class="row">
+						<img src="../img/phone02.png" alt="">
+					</div>
+					<div class="row">
+						<img src="../img/phone03.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="section4">
-		<div class="flex-box">
-			<div class="section4-text text_left">
-			<div class="container">
-				
-					<h2 class="bold_type50_B">SpotCam Video<br /> AI Service</h2>
-					<p class="type16_dG">Enhance security with SpotCam video analytic service. Get rid of false alarms and be
+		<div class="container">
+			<div class="row flex-box">
+				<div class="section4-text text_left">
+					<!-- 10/13 新增-->
+					<h2 class="bold_type50_B mD25">SpotCam Video<br /> AI Service</h2>
+					<!-- 10/13 新增 type16_h23 -->
+					<p class="type16_dG type16_h23">Enhance security with SpotCam video analytic service. Get rid of false alarms and be
 						notified for what really matters.</p>
 						<!-- 10/12 更新a -->
-					<a href="" class="btn_round_lb mT40" title='Learn More'></a>
+						<!-- 10/13 新增 m_mD20 -->
+					<a href="" class="btn_round_lb mT40 m_mTD20" title='Learn More'></a>
 				</div>
 			</div>
-			<div class="section4-img">
-				<img src="../img/bg_cent04.png" alt="">
-			</div>
 		</div>
+		<div class="section4-img">
+			<img src="../img/bg_cent04.png" alt="">
 		</div>
 	</section>
 
 	<section class="section5">
-		<div class="section5-wrapper">
-			<div class="section5-text">
-				<h2 class="bold_type50_B">SpotCam <br /> Smart Connection</h2>
-				<!-- 10/12 新增 mTD3040 -->
-				<p class="type16_dG mTD3040">Build up your own smart home system by connecting SpotCam with all other popular smart
-					gadgets you love.</p>
+		<div class="container">
+			<div class="row">
+				<div class="section5-text">
+					<h2 class="bold_type50_B">SpotCam <br /> Smart Connection</h2>
+					<!-- 10/12 新增 mTD3040 -->
+					<!-- 10/13 新增 type16_h23 -->
+					<p class="type16_dG type16_h23 mTD3040">Build up your own smart home system by connecting SpotCam with all other popular smart
+						gadgets you love.</p>
+				</div>
 			</div>
-			<div class="section5-shop">
-				<img src="../img/brand_logo.png" alt="">
+			<div class="row">
+				<div class="section5-shop">
+					<img src="../img/brand_logo.png" alt="">
+				</div>
 			</div>
-			<div class="section5-img">
-				<img src="../img/bg_cent05.png" alt="">
+			<div class="row">
+				<div class="section5-img">
+					<img src="../img/bg_cent05.png" alt="">
+				</div>
 			</div>
 		</div>
 		<div class='section5-bg'></div>
 	</section>
+
 	<section class="section6">
-		<div class="section6-wrapper">
-			<div class="section6-text">
-				<!-- 10/12 修改356行 - 366行 -->
-				<h2 class='bold_type50_B mD25'>Editor's Opinion</h2>
-				<p class='type16_dG type16_h23'>See what professional testers from popular media say about SpotCam.</p>
-				<div class='all_boxs mT25'>
-					<div class="btn_gradual50 btn_g35 order_left">
-				    <div class="gradua_centW icon-chevron-left text_cent"></div>
-				  </div>
-				  <div class='num_type20_dG mRL15 order_left'>1/11</div>
-				  <div class="btn_gradual50 btn_g35 order_left">
-				    <div class="gradua_centW icon-chevron-right text_cent"></div>
-				  </div>
+		<div class="container">
+			<div class="row flex-box">
+				<div class="section6-text">
+					<!-- 10/12 修改356行 - 366行 -->
+					<!-- 10/13 新增 m_centbox -->
+					<h2 class='bold_type50_B m_centbox mD25'>Editor's Opinion</h2>
+					<p class='type16_dG type16_h23'>We collected the actual useRlip makes them feel attractive People's voice.</p>
+
+					<!-- 10/13 新增 m_centbox + m_mD30 -->
+					<div class='all_boxs mT25 text_cent m_centbox m_mD30'>
+						<div class="btn_gradual50 btn_g35 ">
+							<div class="gradua_centW icon-chevron-left text_cent"></div>
+						</div>
+						<div class='num_type20_dG mRL15'>1/11</div>
+						<div class="btn_gradual50 btn_g35">
+							<div class="gradua_centW icon-chevron-right text_cent"></div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="section6-img">
-				<img src="https://fakeimg.pl/810x480/ff0000/?text=slider" alt="">
+				<div class="section6-img">
+					<img src="https://fakeimg.pl/810x480/ff0000/?text=slider" alt="">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -379,7 +414,7 @@
 			<div class="footer-top mT25">
 				<div class="left">
 					<div class="f-logo">
-						<a href="/"><img src="../img/all_logo.png" alt=""></a>
+						<a href="index.html"><img src="../img/all_logo@2x.png" alt=""></a>
 					</div>
 					<div class="w-ft-info">
 						<div class="info-section">
@@ -401,19 +436,29 @@
 					</div>
 					<nav class="m-ft-info">
 						<ul class="info-section">
-							<li class="info-section-item dropdown-menu type16_dG "> Company <i class="icon-plus"></i>
+							<li class="info-section-item dropdown-menu m_bold_type16_lG "> Company <i class="icon-plus"></i>
 								<div class="m-ft-dropdown-menu">
 									<ul class="m-ft-sub-menu">
-										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">About</a></li>
-										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Contact</a></li>
-										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Privacy Policy</a></li>
-										<li class="m-ft-sub-menu-item"><a href="#" class="type16_dG">Terms of Service</a></li>
+										<!-- 10/13 新增 m-ft-bt -->
+										<li class="m-ft-sub-menu-item m-ft-bt"><a href="#" class="m-f-a">About</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="m-f-a">Contact</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="m-f-a">Privacy Policy</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="m-f-a">Terms of Service</a></li>
 									</ul>
 								</div>
 							</li>
-							<li class="info-section-item"><a href="#" class="type16_dG">Support</a></li>
-							<li class="info-section-item"><a href="#" class="type16_dG">Store</a></li>
-							<li class="info-section-item"><a href="#" class="type16_dG">Blog</a></li>
+							<li class="info-section-item dropdown-menu m_bold_type16_lG "> Support <i class="icon-plus"></i>
+								<div class="m-ft-dropdown-menu">
+									<ul class="m-ft-sub-menu">
+										<!-- 10/13 新增 m-ft-bt -->
+										<li class="m-ft-sub-menu-item m-ft-bt"><a href="#" class="m-f-a">Support Home</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="m-f-a">Become Reseller</a></li>
+										<li class="m-ft-sub-menu-item"><a href="#" class="m-f-a">IFTTT</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="info-section-item"><a href="#" class="m_bold_type16_lG">Store</a></li>
+							<li class="info-section-item"><a href="#" class="m_bold_type16_lG">Blog</a></li>
 						</ul>
 					</nav>
 					<!-- 10/12 這個區域有修正 -->
@@ -427,7 +472,8 @@
 				<div class="right">
 					<div class="mail-section">
 						<!-- 10/12 更新h3樣式 -->
-						<h3 class='bold_type16_lG mD25'>Subscribe to our newsletter for news and promos</h3>
+						<!-- 10/13 新增 m_text_left -->
+						<h3 class='bold_type16_lG mD25 m_text_left'>Subscribe to our newsletter for news and promos</h3>
 						<form action="#">
 							<input class="input03 type13_lG" type="email" name="email" placeholder="Email Subscription">
 							<button type="submit" class="email-button"><i class="icon-chevron-right"></i></button>
