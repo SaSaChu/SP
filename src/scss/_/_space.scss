@@ -1,13 +1,13 @@
 @import "Ginkgo";
 
-.all_boxs {
-  display: inline-block;
-  width: 100%;
-}
-
 // T start
 .boxs_no_w {
   display: inline-block;
+}
+
+// 用到 login
+.pR75 {
+  padding-right: 5.5rem;
 }
 // T end
 
@@ -42,6 +42,7 @@
 .mL17 {
   margin-left: 17px;
 }
+
 
 .mT15 {
   margin-top: 15px;

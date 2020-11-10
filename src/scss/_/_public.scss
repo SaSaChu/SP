@@ -37,3 +37,16 @@
     @include box-shadow(inset -3px 0 3px rgba(39, 40, 34, 1.00));
   }
 }
+
+.all_boxs {
+  display: inline-block;
+  width: 100%;
+}
+
+.box50 {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 50%;
+  float: left;
+}

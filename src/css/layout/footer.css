@@ -121,6 +121,10 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+.all_boxs { display: inline-block; width: 100%; }
+
+.box50 { display: flex; align-items: center; justify-content: center; width: 50%; float: left; }
+
 .color-gradient01 { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */ background: #0083d2; /* Old browsers */ background: -moz-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */ }
 
 .test-blue { background-color: #008ed8; }
