@@ -1,4 +1,3 @@
-
 @import "_/_init";
 @import "_/_public";
 @import "_/_color";
@@ -42,11 +41,32 @@ i {
   font-style: normal;
 }
 
+.no_border_bottom {
+  border-bottom: 0 !important;
+}
+
+.icon-x {
+  font-size: 2rem;
+  color: $gray;
+}
+
 // 13pt
 .type13_W {
   font-size: 1rem;
   color: white;
 }
+
+// T start
+.type13_W2 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, .5);
+}
+
+.type13_dG {
+  font-size: 1rem;
+  color: $deepGray;
+}
+// T end
 
 .type13_lG {
   font-size: 1rem;
@@ -85,6 +105,11 @@ i {
   color: $blue;
 }
 
+.type16_B2 {
+  font-size: 1.2rem;
+  color: $blue2;
+}
+
 .type16_G {
   font-size: 1.2rem;
   color: $gray;
@@ -115,6 +140,31 @@ i {
   @include range-width(0, 450px) {
     font-size: 1rem;
   }
+}
+
+.type16_O {
+  font-size: 1.2rem;
+  color: $orange;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
+}
+
+.bold_type16_B {
+  font-size: 1.2rem;
+  color: $blue;
+  font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
+}
+
+.bold_type16_DG {
+  font-size: 1.2rem;
+  color: $deepGray;
+  font-weight: bolder;
 }
 
 .bold_type16_lG {
@@ -161,6 +211,18 @@ i {
   font-weight: bolder;
 }
 
+.bold_type18_DG {
+  font-size: 1.5rem;
+  color: $deepGray;
+  font-weight: bolder;
+}
+
+.bold_type18_G {
+  font-size: 1.5rem;
+  color: $gray;
+  font-weight: bolder;
+}
+
 
 
 // 20pt
@@ -180,6 +242,14 @@ i {
   line-height: 35px;
   font-size: 1.6rem;
   color: $deepGray;
+}
+
+//26pt
+.type26 {
+  display: inline-block;
+  line-height: 35px;
+  font-size: 2rem;
+  color: black;
 }
 
 
@@ -223,10 +293,3 @@ i {
   color: $deepGray;
   font-weight: bolder;
 }
-
-
-
-
-
-
-

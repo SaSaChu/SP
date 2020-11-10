@@ -1,0 +1,33 @@
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/chat";
+@import "_/_color";
+@import "_/_text";
+@import "_/_block";
+@import "_/_link";
+@import "_/_space";
+
+
+.outer_boxs {
+  display: inline-block;
+  width: 100%;
+  padding: 78px 0;
+
+  .box995 {
+    display:flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 995px;
+    height: 550px;
+    background-color: rgba(255, 0, 0, 0.2);
+   
+    
+    
+  }
+}
+
+

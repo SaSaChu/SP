@@ -5,19 +5,20 @@
 	<meta http-equiv="Content-Language" content="zh-tw">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-
+	<!-- ico -->
+	<link rel='icon' href='img/logo_icon_3x.ico' type='image/x-icon' />
 	<title>SpotCam</title>
-
+	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
-	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-	<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
-	
-	<!-- <script language="javascript" type="text/javascript" src="js/_/jquery-1.12.4.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+	<!--  js -->
+	<script language="javascript" type="text/javascript" src="js/_/jquery-2.1.1.min.js"></script>	
+	<script language="javascript" type="text/javascript" src="js/_/jquery-ui-1.12.0.min.js"></script>	
+	<script language="javascript" type="text/javascript" src="js/_/swiper-bundle.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/_/slick.min.js"></script>	
 	<script language="javascript" type="text/javascript" src="js/index.js"></script>
 </head>
 
@@ -27,12 +28,47 @@
 		<div class="container mT40">
 			<div class="flex-box">
 				<div class="header-left">
-					<div id="m-menu" class="icon-menu">
-						<nav></nav>
-					</div>
+					<div id="m-menu-icon" class="icon-menu"></div>
+					<nav class="m-menu">
+						<div class="container">
+							<i id="m-menu-close" class="icon-x m_mT15"></i>
+							<ul class="menu-section">
+								<li class="menu-section-item dropdown-menu bold_type18_G"> Feature <i class="icon-chevron-down"></i>
+									<div class="m-dropdown-menu">
+										<ul class="m-sub-menu">
+											<li class="m-sub-menu-item"><a href="#" class="m-f-a">Monitoring Camera</a></li>
+											<li class="m-sub-menu-item"><a href="#" class="m-f-a">Video Doorbell</a></li>
+											<li class="m-sub-menu-item no_border_bottom"><a href="#" class="m-f-a">Wire-Free Camera</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-section-item dropdown-menu bold_type18_G "> Cloud Service <i class="icon-chevron-down"></i>
+									<div class="m-dropdown-menu">
+										<ul class="m-sub-menu">
+											<li class="m-sub-menu-item"><a href="#" class="m-f-a">Monitoring Camera</a></li>
+											<li class="m-sub-menu-item"><a href="#" class="m-f-a">Video Doorbell</a></li>
+											<li class="m-sub-menu-item no_border_bottom"><a href="#" class="m-f-a">Wire-Free Camera</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-section-item"><a href="#" class="bold_type18_G">Now on Air</a></li>
+								<li class="menu-section-item"><a href="#" class="bold_type18_G">Support</a></li>
+								<li class="menu-section-item"><a href="#" class="bold_type18_G">MyAccount</a></li>
+							</ul>
+
+							<div class="row">
+								<a class="login icon-user">Login</a>
+							</div>
+							<div class="row">
+								<a class="logout icon-logout---anticon">Log Out</a>
+							</div>
+						</div>
+					</nav>
 					<h1 class="logo">
+						
 						<a class="logo-href" href="#" title="Spotcam">
-							<img src="../img/all_logo@2x.png">
+							<!-- 10/13 新增 -->
+							<img src="img/all_logo@2x.png">
 							<i>Spotcam</i>
 						</a>
 					</h1>
@@ -123,8 +159,8 @@
 			<div class="slider-content">
 				<div class="slider-content-img">
 					<picture>
-						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
-						<img src="../img/bg_cent01.png" >
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
 					</picture>
 				</div>
 				<div class="slider-content-text">
@@ -132,10 +168,31 @@
 						<!-- 10/13 新增 big_banner-->
 						<div class='big_banner'>
 							<div class="slider-content-text-container">
-								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<h4 class="bold_type16_dG">Weatherproof Solution1</h4>
 								<!-- 10/12 新增mD35 -->
 								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+								<a href="#"><button class="gradient-box have_mark">Click me</button></a>
+							</div>
+				        </div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
+					</picture>
+				</div>
+				<div class="slider-content-text">
+					<div class="container">
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG">Weatherproof Solution2</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Click me</button></a>
 							</div>
 						</div>
 					</div>
@@ -144,8 +201,8 @@
 			<div class="slider-content">
 				<div class="slider-content-img">
 					<picture>
-						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
-						<img src="../img/bg_cent01.png" >
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
 					</picture>
 				</div>
 				<div class="slider-content-text">
@@ -153,10 +210,10 @@
 						<!-- 10/13 新增 big_banner-->
 						<div class='big_banner'>
 							<div class="slider-content-text-container">
-								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<h4 class="bold_type16_dG">Weatherproof Solution3</h4>
 								<!-- 10/12 新增mD35 -->
 								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+								<a href=""><button class="gradient-box have_mark">Click me</button></a>
 							</div>
 						</div>
 					</div>
@@ -165,8 +222,8 @@
 			<div class="slider-content">
 				<div class="slider-content-img">
 					<picture>
-						<source srcset="../img/M_banner.png" media="(max-width: 450px)">
-						<img src="../img/bg_cent01.png" >
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
 					</picture>
 				</div>
 				<div class="slider-content-text">
@@ -174,15 +231,58 @@
 						<!-- 10/13 新增 big_banner-->
 						<div class='big_banner'>
 							<div class="slider-content-text-container">
-								<h4 class="bold_type16_dG mTD10">Weatherproof Solution1</h4>
+								<h4 class="bold_type16_dG">Weatherproof Solution4</h4>
 								<!-- 10/12 新增mD35 -->
 								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
-								<a href=""><button class="gradient-box have_mark">Learn more</button></a>
+								<a href=""><button class="gradient-box have_mark">Click me</button></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
+					</picture>
+				</div>
+				<div class="slider-content-text">
+					<div class="container">
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG">Weatherproof Solution5</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Click me</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-content">
+				<div class="slider-content-img">
+					<picture>
+						<source srcset="img/M_banner.png" media="(max-width: 450px)">
+						<img src="img/bg_cent01.png" >
+					</picture>
+				</div>
+				<div class="slider-content-text">
+					<div class="container">
+						<!-- 10/13 新增 big_banner-->
+						<div class='big_banner'>
+							<div class="slider-content-text-container">
+								<h4 class="bold_type16_dG">Weatherproof Solution6</h4>
+								<!-- 10/12 新增mD35 -->
+								<h2 class="bold_type60_dG mD35">Never miss a moment <br />with Arlo Smart.</h2>
+								<a href=""><button class="gradient-box have_mark">Click me</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		<div class="progressBar">
 			<div class="progressBar-container">
@@ -191,14 +291,14 @@
 					<div class="progressBar-item show">
 						<span data-slick-index="0" class="progressBarLine"></span>
 						<div class="progressBar-item-container">
-							<div class="icon-chevron-left" style='color:rgba(167, 171, 186, 1.00);'></div>
+							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s01.png">
+								<img src="img/pro_s01.png">
 							</div>
 							<div class="progressBar-item-text">
 								Indoor Solution
 							</div>
-							<div class="icon-chevron-right" style='color:rgba(167, 171, 186, 1.00);'></div>
+							<div class="icon-chevron-right"></div>
 						</div>
 					</div>
 					<div class="progressBar-item">
@@ -206,7 +306,7 @@
 						<div class="progressBar-item-container">
 							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s02.png">
+								<img src="img/pro_s02.png">
 							</div>
 							<div class="progressBar-item-text">
 								Pan/Tilt Solution
@@ -219,7 +319,7 @@
 						<div class="progressBar-item-container">
 							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s01.png">
+								<img src="img/pro_s01.png">
 							</div>
 							<div class="progressBar-item-text">
 								Weatherproof Solution
@@ -232,7 +332,7 @@
 						<div class="progressBar-item-container">
 							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s04.png">
+								<img src="img/pro_s04.png">
 							</div>
 							<div class="progressBar-item-text">
 								Smart Home Solution
@@ -245,7 +345,7 @@
 						<div class="progressBar-item-container">
 							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s05.png">
+								<img src="img/pro_s05.png">
 							</div>
 							<div class="progressBar-item-text">
 								Video Doorbell Solution
@@ -258,7 +358,7 @@
 						<div class="progressBar-item-container">
 							<div class="icon-chevron-left"></div>
 							<div class="progressBar-item-img">
-								<img src="../img/pro_s06.png">
+								<img src="img/pro_s06.png">
 							</div>
 							<div class="progressBar-item-text">
 								Wire-Free Solution
@@ -283,12 +383,12 @@
 					<p class="type16_dG type16_h23">Smart phone, tablet, laptop, or PC. Receive alerts by email or mobile APP, and watch real-time video
 						whenever you are connected to the internet.</p>
 					<div class="section1-action">
-						<a href="#"><img src="../img/btn_app01.png" alt=""></a>
-						<a href="#"><img src="../img/btn_app02.png" alt=""></a>
+						<a href="#"><img src="img/btn_app01.png" alt=""></a>
+						<a href="#"><img src="img/btn_app02.png" alt=""></a>
 					</div>
 				</div>
 				<div class="section1-img">
-					<img src="../img/pic_family.png" alt="">
+					<img src="img/pic_family.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -308,7 +408,6 @@
 		</div>
 	</div>
 	
-
 	<section class="section3">
 		<div class="container">
 			<div class="row flex-box">
@@ -323,14 +422,14 @@
 					<a href="" class="btn_round_lW mT40 m_mTD20" title='Learn More'></a>
 				</div>
 				<div class="section3-img">
-					<div class="row">
-						<img src="../img/phone01.png" alt="">
+					<div class="row phone-img">
+						<img src="img/phone01.png" alt="">
 					</div>
-					<div class="row">
-						<img src="../img/phone02.png" alt="">
+					<div class="row phone-img">
+						<img src="img/phone02.png" alt="">
 					</div>
-					<div class="row">
-						<img src="../img/phone03.png" alt="">
+					<div class="row phone-img">
+						<img src="img/phone03.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -348,12 +447,12 @@
 						notified for what really matters.</p>
 						<!-- 10/12 更新a -->
 						<!-- 10/13 新增 m_mD20 -->
-					<a href="" class="btn_round_lb mT40 m_mTD20" title='Learn More'></a>
+					<a href="#" class="btn_round_lb mT40 m_mTD20" title='Learn More'></a>
 				</div>
 			</div>
 		</div>
 		<div class="section4-img">
-			<img src="../img/bg_cent04.png" alt="">
+			<img src="img/bg_cent04.png" alt="">
 		</div>
 	</section>
 
@@ -370,12 +469,36 @@
 			</div>
 			<div class="row">
 				<div class="section5-shop">
-					<img src="../img/brand_logo.png" alt="">
+					<img src="img/brand_logo.png" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="section5-img">
-					<img src="../img/bg_cent05.png" alt="">
+					<img src="img/bg_cent05.png" alt="">
+					<div class="product_01">
+						<img src="img/c05_01.png" alt="">
+						<div class="circle"></div>
+					</div>
+					<div class="product_02">
+						<img src="img/c05_02.png" alt="">
+						<div class="circle"></div>
+					</div>
+					<div class="product_03">
+						<img src="img/c05_03.png" alt="">
+						<div class="circle"></div>
+					</div>
+					<div class="product_04">
+						<img src="img/c05_04.png" alt="">
+						<div class="circle"></div>
+					</div>
+					<div class="product_05">
+						<img src="img/c05_05.png" alt="">
+						<div class="circle"></div>
+					</div>
+					<div class="product_06">
+						<img src="img/c05_06.png" alt="">
+						<div class="circle"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -393,28 +516,101 @@
 
 					<!-- 10/13 新增 m_centbox + m_mD30 -->
 					<div class='all_boxs mT25 text_cent m_centbox m_mD30'>
-						<div class="btn_gradual50 btn_g35 ">
+						<div class="btn_gradual50 btn_g35 arrow-left">
 							<div class="gradua_centW icon-chevron-left text_cent"></div>
 						</div>
-						<div class='num_type20_dG mRL15'>1/11</div>
-						<div class="btn_gradual50 btn_g35">
+						<div class='num_type20_dG mRL15 swiper-pagination'></div>
+						<div class="btn_gradual50 btn_g35 arrow-right">
 							<div class="gradua_centW icon-chevron-right text_cent"></div>
 						</div>
 					</div>
 				</div>
-				<div class="section6-img">
-					<img src="https://fakeimg.pl/810x480/ff0000/?text=slider" alt="">
+			</div>
+		</div>
+
+		<div class="section6-opinion swiper-container">
+			<div class="opinion-slider swiper-wrapper">
+				<div class="opinion-slider-item swiper-slide">
+					<div class="opinion-slider-content">
+						<i class="icon-sign_top"></i>
+
+						<div class="opinion-slider-content-img">
+							<picture>
+								<img src="img/opionon.png" >
+							</picture>
+						</div>
+						<div class="opinion-slider-content-text">
+							<p class="type16_dG">
+								1I tested two models and found them more than acceptable for home use. SpotCam records 24 hours of video also senses temperature and humidity and you can even set it up to sound an alarm if it senses motion at a preset time. The app itself, while not at the cutting edge of aesthetic design, is serviceable at the very least.
+							</p>
+						</div>
+					<i class="icon-sign_down"></i>
+
+					</div>
+				</div>
+				<div class="opinion-slider-item swiper-slide">
+					<div class="opinion-slider-content">
+						<i class="icon-sign_top"></i>
+
+						<div class="opinion-slider-content-img">
+							<picture>
+								<img src="img/opionon.png" >
+							</picture>
+						</div>
+						<div class="opinion-slider-content-text">
+							<p class="type16_dG">
+								1I tested two models and found them more than acceptable for home use. SpotCam records 24 hours of video also senses temperature and humidity and you can even set it up to sound an alarm if it senses motion at a preset time. The app itself, while not at the cutting edge of aesthetic design, is serviceable at the very least.
+							</p>
+						</div>
+					<i class="icon-sign_down"></i>
+
+					</div>
+				</div>
+				<div class="opinion-slider-item swiper-slide">
+					<div class="opinion-slider-content">
+						<i class="icon-sign_top"></i>
+
+						<div class="opinion-slider-content-img">
+							<picture>
+								<img src="img/opionon.png" >
+							</picture>
+						</div>
+						<div class="opinion-slider-content-text">
+							<p class="type16_dG">
+								1I tested two models and found them more than acceptable for home use. SpotCam records 24 hours of video also senses temperature and humidity and you can even set it up to sound an alarm if it senses motion at a preset time. The app itself, while not at the cutting edge of aesthetic design, is serviceable at the very least.
+							</p>
+						</div>
+					<i class="icon-sign_down"></i>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<div class="chat">
+		<div class="container">
+			<div class="chat-1">
+				<div class="chat-icon">
+					<i class="icon-addcam"></i>
+				</div>
+				<a href="#" class="chat-text"> show </a>
+			</div>
+			<div class="chat-2">
+				<div class="chat-icon">
+					<i class="icon-talk"></i>
+				</div>
+				<a href="#" class="chat-text"> Chat with us </a>
+			</div>
+		</div>
+	</div>
 	<footer>
 		<div class="container">
 			<!-- 10/12 新增樣式 mT25 -->
 			<div class="footer-top mT25">
 				<div class="left">
 					<div class="f-logo">
-						<a href="index.html"><img src="../img/all_logo@2x.png" alt=""></a>
+						<a href="/"><img src="img/all_logo.png" alt=""></a>
 					</div>
 					<div class="w-ft-info">
 						<div class="info-section">
@@ -480,9 +676,9 @@
 						</form>
 					</div>
 					<div class="attest-section">
-						<img src="../img/attest01.png" alt="">
-						<img src="../img/attest02.png" alt="">
-						<img src="../img/attest03.png" alt="">
+						<img src="img/attest01.png" alt="">
+						<img src="img/attest02.png" alt="">
+						<img src="img/attest03.png" alt="">
 					</div>
 				</div>
 			</div>

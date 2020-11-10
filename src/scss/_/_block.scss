@@ -19,7 +19,7 @@ $phone-width: 340px;
         z-index: 777;
         // background-color: rgba(255, 0, 0, 0.2);
 
-        @include range-width(0, 450px) {
+        @include range-width(0, 1025px) {
             padding: 0 1.5rem;
         }
     }

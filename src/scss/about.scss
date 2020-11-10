@@ -1,0 +1,239 @@
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/chat";
+@import "_/_color";
+@import "_/_text";
+@import "_/_block";
+@import "_/_link";
+@import "_/_space";
+
+header {
+    position: relative;
+
+    &.fix {
+        margin-top:0;
+    }
+}
+
+.banner {
+    position: relative;
+    margin-top: 82px; 
+
+    .banner-img {
+
+        img {
+            width: 100vw;
+        }
+    }
+
+    .banner-title {
+        position: absolute;
+        top: 35%;
+        left: 170px;
+
+        @include range-width(0, 769px) {
+            top: 20%;
+            left: 0;
+            width: 100%;
+        }
+
+        .container {
+            @include range-width(0, 769px) {
+                .banner-text {
+                    text-align: center;
+                }
+            }
+            nav {
+
+                .breadcrumb {
+                    padding: 0;
+                    list-style: none;
+                    
+                    .breadcrumb-item {
+                        color: white;
+                        
+                        @include range-width(0, 769px) {
+                            text-align: center;
+                        }
+
+                        a, span {
+                            color: white
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 4rem;
+
+    @include range-width(0, 769px) {
+        &.flex-box {
+            flex-direction: column;
+        }
+    }
+
+    &.container {
+        max-width: 1100px;
+    }
+
+    aside {
+        width: 25%;
+
+        @include range-width(0, 769px) {
+            width: 100%;
+            position: relative;
+        }
+
+        nav {
+            ul {
+                padding: 0;
+                list-style: none;
+                position: relative;
+
+                #mobile-aside {
+                    display: none;
+
+                    @include range-width(0, 769px) {
+                       display: inline-block; 
+                       width: 100%;
+                    } 
+
+                    
+                }
+
+                i.icon-chevron-down, i.icon-chevron-up {
+                    display: none; 
+                    @include range-width(0, 769px) {
+                        display: inline-block; 
+                        position: absolute;
+                        right: 0;
+                    } 
+                    
+                }
+
+                li.aside-item {
+                    cursor: pointer;
+
+                    @include range-width(0, 769px) {
+                        display: none; 
+                     } 
+
+                    &:not(:first-child){
+                        margin-top: 3rem;
+                    }
+
+                    &.active {
+                        span {
+                            color: $blue;
+                        }
+                    }
+
+                    img, span {
+                        vertical-align: middle;
+                    }
+
+                    img {
+                        @include range-width(0, 769px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    article {
+        display: none;
+        width: 75%;
+        max-width: 780px;
+        margin-bottom: 10rem;
+
+        @include range-width(0, 769px) {
+            width: 100%;
+
+            figure {
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            display: block;
+        }
+
+        header {
+            z-index: -1;
+        }
+
+        figure {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    #contact {
+
+        .info {
+
+            @include range-width(0, 769px) {
+                flex-direction: column;
+            }
+
+            .address,.phone {
+                width: 50%;
+                
+                @include range-width(0, 769px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .mail {
+            justify-content: space-between;
+
+            @include range-width(0, 769px) {
+                flex-direction: column;
+            }
+
+            .media, .sales, .every {
+                img,span {
+                    vertical-align: middle;
+                }
+
+                p {
+                    @include range-width(0, 769px) {
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+
+        .help {
+            justify-content: flex-end;
+            align-items: center;
+
+            @include range-width(0, 769px) {
+                flex-direction: column;
+            }
+
+            .gradient-box {
+                background-color: white;
+            }
+        }
+    }
+
+    #privacy {
+        img, span {
+            vertical-align: middle;
+        }
+    }
+}

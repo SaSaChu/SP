@@ -1,10 +1,15 @@
-
 @import "Ginkgo";
 
 .all_boxs {
   display: inline-block;
   width: 100%;
 }
+
+// T start
+.boxs_no_w {
+  display: inline-block;
+}
+// T end
 
 .m_centbox {
   @include range-width(0, 450px) {
@@ -34,12 +39,21 @@
   margin-right: 10px;
 }
 
+.mL17 {
+  margin-left: 17px;
+}
+
+.mT15 {
+  margin-top: 15px;
+}
+
 .mT40 {
   margin-top: 40px;
 
-  @include range-width(0, 450px) {
+  @include range-width(0, 769px) {
     margin-top: 5px;
   }
+
 }
 
 .mT25 {
@@ -49,7 +63,7 @@
 .mD25 {
   margin-bottom: 25px;
 
-  @include range-width(0, 450px) {
+  @include range-width(0, 1025px) {
     margin-bottom: 15px;
     margin-top: 20px;
   }
@@ -67,9 +81,15 @@
   }
 }
 
-.m_mTD20 {
+.m_mT15 {
   @include range-width(0, 450px) {
-    margin: 1.2rem 0;
+    margin-top: 15px;
+  }
+}
+
+.m_mTD20 {
+  @include range-width(0, 1025px) {
+    margin: 2rem 0;
   }
 }
 
@@ -104,6 +124,3 @@
     margin: 40px 0 10px 0;
   }
 }
-
-
-

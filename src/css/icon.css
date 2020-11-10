@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../icon/icomoon/fonts/icomoon.eot?1602518460') format('embedded-opentype'), url('../icon/icomoon/fonts/icomoon.woff?1602518460') format('woff'), url('../icon/icomoon/fonts/icomoon.ttf?1602518460') format('truetype'), url('../icon/icomoon/fonts/icomoon.svg?1602518460') format('svg'); }
+@font-face { font-family: "icon"; src: url('../icon/icomoon/fonts/icomoon.eot?1604648498') format('embedded-opentype'), url('../icon/icomoon/fonts/icomoon.woff?1604648498') format('woff'), url('../icon/icomoon/fonts/icomoon.ttf?1604648498') format('truetype'), url('../icon/icomoon/fonts/icomoon.svg?1604648498') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-Social_blog:before { content: "\e90a"; }
@@ -20,6 +20,8 @@
 .icon-chevron-up:before { content: "\e903"; }
 
 .icon-earth:before { content: "\e905"; }
+
+.icon-logout---anticon:before { content: "\e913"; }
 
 .icon-menu:before { content: "\e906"; }
 

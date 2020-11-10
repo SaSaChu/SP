@@ -6,11 +6,44 @@
 footer {
     border-top: 1px solid rgba(225, 225, 225, 1.00);
 
+    // T start
+    &.f-n-b-t {
+        border-top: 0;
+    }
+    
+    .footer_type2 {
+        display: inline-block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        min-height: 60px;
+
+        &.f-type3 {
+            border-top: 1px solid $blue;
+        }
+
+        .f-type2-boxs {
+            display: inline-block;
+            width: 100%;
+            max-width: 1300px;
+            line-height: 60px;
+
+            .f-type2-link {
+                display: inline-block;
+                float: right;
+                line-height: 60px;
+            }
+        }
+    }
+
+    // T end
+
     .footer-top {
         display: flex;
         justify-content: space-between;
             
-        @media screen and (max-width:450px) {
+        @include range-width(0, 769px) {
             flex-direction: column;
         }
 
@@ -19,7 +52,7 @@ footer {
             .f-logo {
                 display: none;
 
-                @include range-width(0, 450px) {
+                @include range-width(0, 769px) {
                     display: inline-block;
                     width: 100%;
                     // margin: 1.5rem 0;
@@ -35,9 +68,10 @@ footer {
 
             .w-ft-info {
                 display: flex;
-                @media screen and (max-width:450px) {
+                @include range-width(0, 769px) {
                     display: none;
                 }
+
                 div {
                     display: flex;
                     flex-direction: column;
@@ -51,15 +85,13 @@ footer {
                         padding: 0 0 15px 0;
                         text-decoration: none;
                     }
-    
-                   
                 }
             }
 
             .m-ft-info {
                 display: none;
 
-                @media screen and (max-width:450px) {
+                @include range-width(0, 769px) {
                     display: flex;
                     flex-direction: column;
                     text-align: left;
@@ -84,7 +116,6 @@ footer {
                             }
                         }
                     }
-                    
 
                     .m-ft-dropdown-menu {
                         display: none;
@@ -93,6 +124,7 @@ footer {
                         .m-ft-sub-menu {
                             padding: 0;
                             list-style: none;
+
                             .m-ft-sub-menu-item {
                                 padding: 1.5rem 15px .5rem 15px;
 
@@ -101,6 +133,7 @@ footer {
                                     border-top: 1px solid rgba(225, 225, 225, 1.00);
                                 }
                             }
+                            
                         } 
                         &.show {
                             display: block;
@@ -108,11 +141,12 @@ footer {
                     }
                 }
             }
+
             .social-section {
                 display: flex;
                 margin: 1rem 0 3rem 0;
 
-                @include range-width(0, 450px) {
+                @include range-width(0, 769px) {
                     width: 100%;
                     float: left;
                     margin: 1rem 0;
@@ -125,7 +159,6 @@ footer {
                     border-radius: 50%;
                     color: rgba(156, 156, 156, 1.00);
                     text-decoration: none;
-                    
                     cursor: pointer;
                 }
             }
@@ -133,15 +166,15 @@ footer {
         .right {
             text-align: right;
 
-            @media screen and (max-width:450px) {
+            @include range-width(0, 769px) {
                 display: flex;
                 flex-direction: column;
             }
 
             .mail-section {
                 position: relative;
+
                 input[type=email] {
-                    
                     display: inline-block;
                     border: solid 1px #ccc;
                     padding: 9px 10px 9px 14px;
@@ -169,28 +202,31 @@ footer {
                         background-color: rgba(164, 164, 164, 1.00);
                         border-radius: 50%;
                         color: rgba(255, 255, 255, 1.00);
-                        z-index: 3;
+                        z-index: 1;
                         outline: none;
                         cursor: pointer;
 
                         i {
+                            position: absolute;
+                            top: calc(50% - 1rem);
+                            left: calc(50% - 1rem);
                             display: inline-block;
                             font-size: 2rem;
                             font-style: normal;
-                            line-height: 1.8rem;
+                            line-height: 2rem;
                         }
                     }
                 }
-                
             }
 
             .attest-section {
                 margin: 2rem 0 0 0;
+
                 :nth-child(2) {
                     margin: 0 1rem;
                 }
 
-                @include range-width(0, 450px) {
+                @include range-width(0, 769px) {
                     margin: 2rem 0;
                 }
             }
@@ -198,29 +234,28 @@ footer {
     }
 
     .footer-bottom {
-        
         background-color: $blue;
-        padding: 2rem 0;
-        
+        padding: 2rem 1rem;
 
         .footer-bottom-wrapper {
             position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
             text-align: left;
 
-            @media screen and (max-width:450px) {
+            @include range-width(0, 769px) {
                 flex-direction: column;
                 align-items: flex-start;
             }
             
             .language {
+
                 .icon-earth {
                     font-size: 1.3rem;
                     color: white;
                 }
+
                 select {
                     background-color: transparent;
                     border: 0;
@@ -230,12 +265,12 @@ footer {
                     margin-top: -2px; 
                 }
             }
+            
             .copy-right {
-                @media screen and (max-width:450px) {
-                margin-top: 1rem;
+                @include range-width(0, 769px) {
+                    margin-top: 1rem;
                 }   
             }
         }
-       
     }
 }
