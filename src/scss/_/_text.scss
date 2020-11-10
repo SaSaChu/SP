@@ -16,6 +16,10 @@
 }
 
 
+.lH26 {
+  line-height: 2rem;
+}
+
 // 漸層01
 .color-gradient01 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
@@ -108,6 +112,7 @@ i {
 .type16_B2 {
   font-size: 1.2rem;
   color: $blue2;
+  line-height: 1.8rem;
 }
 
 .type16_G {
@@ -118,6 +123,7 @@ i {
 .type16_dG {
   font-size: 1.2rem;
   color: $deepGray;
+  line-height: 1.8rem;
 
   @include range-width(0, 450px) {
     font-size: 1rem;

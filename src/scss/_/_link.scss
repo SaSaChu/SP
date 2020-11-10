@@ -204,85 +204,74 @@ button {
   border-image-slice: 1;
 }
 
-// banner的按鈕
-// .gradient-box {
-//   display: flex;
-//   align-items: center;
-//   width: 17rem;
-//   // height: 3rem;
-//   //width: 50vw;
-//   // width: 90%;
-//   // margin: auto;
-//   // max-width: 22em;
+.btn_cent {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bolder;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  background-color: transparent; 
+  @include border-radius(100px);
+  line-height: 30px;
+  margin-bottom: 20px;
 
-//   position: relative;
-//   padding: 1rem 2.5rem;
-//   font-size: 1.5rem;
-//   font-weight: bolder;
-//   box-sizing: border-box;
+  &.btn-c-s {
+    padding: 5px 15px;
+  }
 
-//   $border: 3px;
-//   color: $blue;
-//   // background: #000;
-//   background-clip: padding-box; /* !importanté */
-//   border: solid $border transparent; /* !importanté */
-//   border-radius: 2em;
+  &.h-black {
+    border:3px solid $gray3;
+    color: $deepGray;
+    @include transition(all .3s);
 
-//   @include range-width(0, 450px) {
-//     width: 11rem;
-//     padding: .5rem 1rem;
-//     font-size: 1.2rem;
-//   }
+    &:hover {
+      color: white;
+      background-color: $gray3;
+    }
+  }
 
-//   &:before {
-//     display: inline-block;
-//     content: '';
-//     position: absolute;
-//     top: 0; right: 0; bottom: 0; left: 0;
-//     width: 17rem;
-//     // height: 3rem;
-//     z-index: -1;
-//     margin: -$border; /* !importanté */
-//     border-radius: 30px; /* !importanté */
-//     // background: linear-gradient(to right, rgba(0, 131, 210, 1.00), rgba(0, 178, 210, 1.00));
-//     background-image: -webkit-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
-//     background-image: -moz-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); 
-//     background-image: linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
+  &.h-o {
+    border:3px solid $orange;
+    color: $orange;
+    @include transition(all .3s);
 
-//     @include range-width(0, 450px) {
-//       width: 11rem;
-//       padding: .5rem 1rem;
-//       font-size: 1.2rem;
-//     }
-//   }
+    &:hover {
+      color: white;
+      background-color: $orange;
+    }
+  }
 
-//   &.have_mark {
-//     &:after {
-//       display: inline-block;
-//       content: '\e902';
-//       font-family: 'icon';
-//       font-weight: bolder;
-//       font-size: 2rem;
-//       margin-left: 10px;
-//     }
-//   }
+  &.h-b {
+    border:3px solid $blue;
+    color: $blue;
+    @include transition(all .3s);
 
-//   @include range-width(0, 450px) {
-//     &.have_mark {
-//       &:after {
-//         font-size: 1.6rem;
-//         margin-left: 5px;
-//       }
-//     }
-//   }
+    &:hover {
+      color: white;
+      background-color: $blue;
+    }
+  }
 
-//   &:hover, &:active {
-//     color: white;
-//     background-image: -webkit-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
-//     background-image: -moz-linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%); 
-//     background-image: linear-gradient(to right,  rgba(0, 131, 210, 1.00) 0%,rgba(0, 178, 210, 1.00) 100%);
-//   }
-// }
+  &.h-all {
+    width: 100%;
+  }
+
+  &.h-half {
+    width: 45%;
+  }
+
+  &.h-mark {
+    &:after {
+      display: inline-block;
+      content: '\e902';
+      font-family: 'icon';
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+  }
+}
+
 .gradient-box {
   display: flex;
   align-items: center;

@@ -114,7 +114,7 @@ template { display: none; }
 
 .all_boxs { display: inline-block; width: 100%; }
 
-.box50 { display: flex; align-items: center; justify-content: center; width: 50%; float: left; }
+.box50 { display: inline-block; width: 50%; float: left; }
 
 .container { position: relative; margin: 0 auto; width: 100%; max-width: 1300px; }
 .container .big_banner { display: inline-block; width: 100%; position: absolute; top: 0; left: 0; z-index: 777; }
@@ -142,6 +142,8 @@ template { display: none; }
 .text_cent { text-align: center; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_text_left { text-align: left !important; } }
+
+.lH26 { line-height: 2rem; }
 
 .color-gradient01 { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */ background: #0083d2; /* Old browsers */ background: -moz-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */ }
 
@@ -173,11 +175,11 @@ i { display: inline-block; font-style: normal; }
 
 .type16_B { font-size: 1.2rem; color: #008ed8; }
 
-.type16_B2 { font-size: 1.2rem; color: #00b2d2; }
+.type16_B2 { font-size: 1.2rem; color: #00b2d2; line-height: 1.8rem; }
 
 .type16_G { font-size: 1.2rem; color: #4b4b4b; }
 
-.type16_dG { font-size: 1.2rem; color: #3a3a3a; }
+.type16_dG { font-size: 1.2rem; color: #3a3a3a; line-height: 1.8rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .type16_dG { font-size: 1rem; } }
 
 .type16_W { font-size: 1.2rem; color: white; }
@@ -265,6 +267,18 @@ button { display: inline-block; outline: 0; border: 0; }
 
 .btn_gradualB { display: inline-block; padding: 13px 15px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; font-size: 1.3rem; border: 3px solid transparent; border-width: 3px; border-image: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); border-image-slice: 1; }
 
+.btn_cent { display: inline-block; cursor: pointer; font-weight: bolder; padding: 10px 15px; font-size: 1.5rem; background-color: transparent; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; line-height: 30px; margin-bottom: 20px; }
+.btn_cent.btn-c-s { padding: 5px 15px; }
+.btn_cent.h-black { border: 3px solid #b1b1b1; color: #3a3a3a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-black:hover { color: white; background-color: #b1b1b1; }
+.btn_cent.h-o { border: 3px solid #ff7902; color: #ff7902; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-o:hover { color: white; background-color: #ff7902; }
+.btn_cent.h-b { border: 3px solid #008ed8; color: #008ed8; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-b:hover { color: white; background-color: #008ed8; }
+.btn_cent.h-all { width: 100%; }
+.btn_cent.h-half { width: 45%; }
+.btn_cent.h-mark:after { display: inline-block; content: '\e902'; font-family: 'icon'; font-weight: bolder; font-size: 2rem; margin-left: 10px; }
+
 .gradient-box { display: flex; align-items: center; position: relative; padding: 1rem 2.5rem; font-size: 1.5rem; font-weight: bolder; color: #008ed8; border: solid 3px #008ed8; border-radius: 2em; }
 @media screen and (max-width: 449px) and (min-width: 0) { .gradient-box { padding: .5rem 1rem; font-size: 1.2rem; } }
 .gradient-box.have_mark:after { display: inline-block; content: '\e902'; font-family: 'icon'; font-weight: bolder; font-size: 2rem; margin-left: 10px; }
@@ -285,6 +299,10 @@ button { display: inline-block; outline: 0; border: 0; }
 .boxs_no_w { display: inline-block; }
 
 .pR75 { padding-right: 5.5rem; }
+
+.mD15 { margin-bottom: 15px; }
+
+.mL15 { margin-left: 15px; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_centbox { margin: 0 auto; width: auto !important; } }
 
@@ -453,25 +471,31 @@ footer .footer-bottom .footer-bottom-wrapper .language select { background-color
 .chat .chat-1.chat-2 .chat-text, .chat .chat-2.chat-2 .chat-text { position: absolute; top: 5px; left: 0; width: 0; height: 40px; opacity: 0; border: 2px solid #008ed8; line-height: 40px; font-size: 0; border-radius: 50px; background-color: white; color: #008ed8; z-index: -1; }
 
 .outer_boxs { display: flex; align-items: center; justify-content: center; width: 100%; height: calc(100vh - 60px); }
-.outer_boxs .box995 { display: inline-block; width: 100%; max-width: 995px; padding: 110px 0; border: 1px solid rgba(255, 0, 0, 0.3); }
+.outer_boxs .box995 { display: inline-block; width: 100%; max-width: 995px; }
+.outer_boxs .box600 { display: inline-block; width: 100%; max-width: 600px; }
 
 .login_box { display: inline-block; width: 100%; }
+.login_box.l-s-p90 { padding-top: 90px; }
 .login_box.gray_box { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: whitesmoke; padding: 35px; }
 
 .img_logo { display: inline-block; width: 100%; max-width: 240px; }
 
-.lt_b20 { display: inline-block; padding: 40px 0 25px 0; font-size: 1.5rem; color: #3a3a3a; font-weight: bolder; text-align: left; line-height: 2rem; }
+.l_Fpw { display: inline-block; color: #008ed8; cursor: pointer; text-decoration: none; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 1.2rem; }
+.l_Fpw:hover { text-decoration: underline; }
 
-.lt_b26 { display: inline-block; padding: 0 0 35px 0; font-size: 2rem; color: #3a3a3a; font-weight: bolder; float: left; line-height: 2rem; }
+.lt_b20 { display: inline-block; padding: 40px 0 25px 0; font-size: 1.5rem; color: #3a3a3a; font-weight: bolder; text-align: left; line-height: 2rem; float: left; }
+.lt_b20.l_ftp_t { padding: 30px 0 15px 0; }
+
+.lt_b26 { display: inline-block; padding: 0 0 35px 0; font-size: 2rem; color: #3a3a3a; font-weight: bolder; float: left; line-height: 2rem; text-align: left; }
 
 .la_b20 { display: inline-block; font-size: 1.5rem; color: #ff7902; font-weight: bolder; line-height: 2rem; cursor: pointer; text-decoration: none; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .la_b20:hover, .la_b20:active { text-decoration: underline; }
 
 .l_list { display: inline-block; text-align: left; list-style-type: none; padding: 0; margin: 0; }
-.l_list li { display: inline-block; font-size: 1.2rem; color: #4b4b4b; font-weight: lighter; background-image: url(../img/Oval.png); background-position: left 8px; background-repeat: no-repeat; list-style-type: none; padding: 5px 0 5px 20px; }
+.l_list li { display: inline-block; font-size: 1.2rem; color: #4b4b4b; font-weight: lighter; background-image: url(../img/Oval.png); background-position: left 8px; background-repeat: no-repeat; list-style-type: none; padding: 5px 0 5px 20px; line-height: 1.6rem; }
 
 .l_input_box { display: inline-block; width: 100%; border-bottom: 1px solid #979797; margin-bottom: 5px; }
-.l_input_box.no_bo { border-bottom: 0; }
+.l_input_box.no_bo { border-bottom: 0; margin: 30px 0; }
 
 .l_input { display: inline-block; width: 90%; background-color: transparent; border: 0; padding: 10px 3px; color: #4b4b4b; font-size: 1.2rem; float: left; outline: 0; }
 .l_input::placeholder { color: #979797; }
@@ -479,23 +503,42 @@ footer .footer-bottom .footer-bottom-wrapper .language select { background-color
 .l_icon { display: inline-block; width: 30px; height: 30px; background-color: transparent; outline: 0; border: 0; cursor: pointer; }
 .l_icon.icon-eye { color: rgba(75, 75, 75, 0.5); font-size: 1.4rem; }
 
-.container { display: block; position: relative; padding-left: 35px; margin-bottom: 12px; cursor: pointer; font-size: 22px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
-.container input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+.l_container { display: inline-block; float: left; position: relative; padding-left: 35px; margin: 0 12px 8px 0; cursor: pointer; font-size: 1.2rem; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #4b4b4b; }
+.l_container input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
 
-/* Hide the browser's default checkbox */
-/* Create a custom checkbox */
-.checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #eee; }
+.l_checkmark { position: absolute; top: 0; left: 0; height: 18px; width: 18px; border: 1px solid rgba(75, 75, 75, 0.5); }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark { background-color: #ccc; }
-.container input:checked ~ .checkmark { background-color: #2196F3; }
+.l_container input:checked ~ .l_checkmark { background-color: #2196F3; }
 
-/* When the checkbox is checked, add a blue background */
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after { content: ""; position: absolute; display: none; }
+.l_checkmark:after { content: ""; position: absolute; display: none; }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after { display: block; }
-.container .checkmark:after { left: 9px; top: 5px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.l_container input:checked ~ .l_checkmark:after { display: block; }
+.l_container .l_checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 
-/* Style the checkmark/indicator */
+.r_boxs_w { display: inline-block; width: 100%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 40px; }
+
+.r_box2 { display: inline-block; width: calc(100% / 2 - 30px * 1 / 2); float: left; }
+.r_box2:first-child { margin-right: 30px; }
+
+.r-lp40 { padding-left: 40px; }
+
+.r_box { display: inline-block; width: 50%; float: left; margin-top: 30px; }
+.r_box:first-child { padding-left: 40px; }
+.r_box:last-child { padding-left: 30px; }
+
+.r_box1 { display: inline-block; width: 100%; }
+
+.r_icon { display: inline-block; width: 30px; height: 30px; float: left; }
+.r_icon.icon-icon03, .r_icon.icon-icon10, .r_icon.icon-icon09, .r_icon.icon-icon08, .r_icon.icon-icon07, .r_icon.icon-icon06, .r_icon.icon-icon05, .r_icon.icon-icon02, .r_icon.icon-icon01 { color: #3a3a3a; font-size: 1.8rem; }
+
+.r_text { display: inline-block; width: 100%; float: left; padding: 2px 3px 8px 3px; color: #979797; font-size: 1.2rem; text-align: left; line-height: 30px; }
+.r_text:before { display: inline-block; content: '\e91b'; font-family: icon; color: #3a3a3a; font-size: 1.8rem; margin-right: 20px; }
+
+.r_title { display: inline-block; width: 100%; color: white; font-size: 3rem; font-weight: bolder; }
+.r_title:before { display: inline-block; content: ''; background-image: url(../img/logo_s_w.svg); width: 30px; height: 30px; background-repeat: no-repeat; background-position: left; margin: 5px 15px 0 0; }
+
+.r_subtitle { display: inline-block; width: 100%; padding: 20px 0 45px 0; font-size: 1.2rem; color: white; line-height: 1.8rem; }
+
+.r_input { display: inline-block; width: calc(100% - 40px); background-color: transparent; margin-left: 10px; border: 0; padding: 2px 3px 8px 3px; color: #4b4b4b; font-size: 1.2rem; float: left; outline: 0; border-bottom: 1px solid #979797; }
+.r_input::placeholder { color: #979797; }
+.r_input.r_input100 { width: 100% !important; }

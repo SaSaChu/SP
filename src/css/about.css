@@ -114,7 +114,7 @@ template { display: none; }
 
 .all_boxs { display: inline-block; width: 100%; }
 
-.box50 { display: flex; align-items: center; justify-content: center; width: 50%; float: left; }
+.box50 { display: inline-block; width: 50%; float: left; }
 
 .container { position: relative; margin: 0 auto; width: 100%; max-width: 1300px; }
 .container .big_banner { display: inline-block; width: 100%; position: absolute; top: 0; left: 0; z-index: 777; }
@@ -142,6 +142,8 @@ template { display: none; }
 .text_cent { text-align: center; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_text_left { text-align: left !important; } }
+
+.lH26 { line-height: 2rem; }
 
 .color-gradient01 { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */ background: #0083d2; /* Old browsers */ background: -moz-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #0083d2 0%, #00b2d2 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 131, 210, 1.00)', endColorstr='rgba(0, 178, 210, 1.00)',GradientType=1 ); /* IE6-9 */ }
 
@@ -173,11 +175,11 @@ i { display: inline-block; font-style: normal; }
 
 .type16_B { font-size: 1.2rem; color: #008ed8; }
 
-.type16_B2 { font-size: 1.2rem; color: #00b2d2; }
+.type16_B2 { font-size: 1.2rem; color: #00b2d2; line-height: 1.8rem; }
 
 .type16_G { font-size: 1.2rem; color: #4b4b4b; }
 
-.type16_dG { font-size: 1.2rem; color: #3a3a3a; }
+.type16_dG { font-size: 1.2rem; color: #3a3a3a; line-height: 1.8rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .type16_dG { font-size: 1rem; } }
 
 .type16_W { font-size: 1.2rem; color: white; }
@@ -265,6 +267,18 @@ button { display: inline-block; outline: 0; border: 0; }
 
 .btn_gradualB { display: inline-block; padding: 13px 15px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; font-size: 1.3rem; border: 3px solid transparent; border-width: 3px; border-image: linear-gradient(to right, #0083d2 0%, #00b2d2 100%); border-image-slice: 1; }
 
+.btn_cent { display: inline-block; cursor: pointer; font-weight: bolder; padding: 10px 15px; font-size: 1.5rem; background-color: transparent; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; line-height: 30px; margin-bottom: 20px; }
+.btn_cent.btn-c-s { padding: 5px 15px; }
+.btn_cent.h-black { border: 3px solid #b1b1b1; color: #3a3a3a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-black:hover { color: white; background-color: #b1b1b1; }
+.btn_cent.h-o { border: 3px solid #ff7902; color: #ff7902; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-o:hover { color: white; background-color: #ff7902; }
+.btn_cent.h-b { border: 3px solid #008ed8; color: #008ed8; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_cent.h-b:hover { color: white; background-color: #008ed8; }
+.btn_cent.h-all { width: 100%; }
+.btn_cent.h-half { width: 45%; }
+.btn_cent.h-mark:after { display: inline-block; content: '\e902'; font-family: 'icon'; font-weight: bolder; font-size: 2rem; margin-left: 10px; }
+
 .gradient-box { display: flex; align-items: center; position: relative; padding: 1rem 2.5rem; font-size: 1.5rem; font-weight: bolder; color: #008ed8; border: solid 3px #008ed8; border-radius: 2em; }
 @media screen and (max-width: 449px) and (min-width: 0) { .gradient-box { padding: .5rem 1rem; font-size: 1.2rem; } }
 .gradient-box.have_mark:after { display: inline-block; content: '\e902'; font-family: 'icon'; font-weight: bolder; font-size: 2rem; margin-left: 10px; }
@@ -285,6 +299,10 @@ button { display: inline-block; outline: 0; border: 0; }
 .boxs_no_w { display: inline-block; }
 
 .pR75 { padding-right: 5.5rem; }
+
+.mD15 { margin-bottom: 15px; }
+
+.mL15 { margin-left: 15px; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_centbox { margin: 0 auto; width: auto !important; } }
 
