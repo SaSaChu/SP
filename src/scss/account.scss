@@ -1,0 +1,17 @@
+@import "_/_init";
+@import "_/_public";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/chat";
+@import "_/_color";
+@import "_/_text";
+@import "_/_block";
+@import "_/_link";
+@import "_/_space";
+
+
+.a_subtitle_box {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid $mGray;
+}
